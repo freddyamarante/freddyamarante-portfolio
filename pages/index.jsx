@@ -12,10 +12,13 @@ const amarante = Amarante({ weight: '400', subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`flex flex-col text-black dark:text-white ${merriweather.className} overflow-x-hidden dark`}
+      className={`flex flex-col text-night dark:text-white ${merriweather.className} overflow-x-hidden dark`}
     >
-      <section className="h-screen">
-        <div className="h-full px-8 py-10 justify-center items-center">
+      <section className="flex flex-col h-screen">
+        <nav class="relative flex flex-row justify-end pt-2 pr-8">
+          <DarkModeToggle />
+        </nav>
+        <div className="h-full px-8 pt-4 pb-10 justify-center items-center">
           <div className="flex flex-row h-full w-full border-2 dark:border-white justify-center items-center">
             <Experience />
             <div className="absolute flex flex-col justify-content text-center max-w-sm lg:max-w-lg">
@@ -30,7 +33,6 @@ export default function Home() {
                 user interfaces. And you&apos;re looking at one of my latest
                 creations right now.
               </p>
-              <DarkModeToggle />
             </div>
           </div>
         </div>

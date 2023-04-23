@@ -20,14 +20,14 @@ export default function DarkModeToggle() {
       checked={darkMode}
       onChange={toggleDarkMode}
       className={`${
-        darkMode ? 'bg-indigo-600' : 'bg-gray-200'
-      } relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2`}
+        darkMode ? 'bg-white' : 'bg-night'
+      } relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer border-2 border-transparent transition-colors duration-200 ease-in-out`}
     >
       <span className="sr-only">Use setting</span>
       <span
         className={`${
-          darkMode ? 'translate-x-5' : 'translate-x-0'
-        } pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out`}
+          darkMode ? 'translate-x-5 bg-blackbean' : 'translate-x-0 bg-white'
+        } pointer-events-none relative inline-block h-5 w-5 transform shadow ring-0 transition duration-200 ease-in-out`}
       >
         <span
           className={`${
@@ -38,11 +38,7 @@ export default function DarkModeToggle() {
             absolute inset-0 flex h-full w-full items-center justify-center transition-opacity`}
           aria-hidden="true"
         >
-          <svg
-            className="h-3 w-3 text-gray-400"
-            fill="none"
-            viewBox="0 0 12 12"
-          >
+          <svg className="h-3 w-3" fill="none" viewBox="0 0 12 12">
             <path
               d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2"
               stroke="currentColor"
@@ -62,7 +58,7 @@ export default function DarkModeToggle() {
           aria-hidden="true"
         >
           <svg
-            className="h-3 w-3 text-indigo-600"
+            className="h-3 w-3 text-night dark:text-white"
             fill="currentColor"
             viewBox="0 0 12 12"
           >

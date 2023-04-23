@@ -6,18 +6,18 @@ import { useEffect, useState } from 'react'
 THREE.ColorManagement.enabled = false
 
 function Sphere({ scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }) {
-  const [sphereLine, setSphereLine] = useState('#000000')
-  const [sphereColor, setSphereColor] = useState('#ffffff')
+  const [sphereLine, setSphereLine] = useState('#151414')
+  const [sphereColor, setSphereColor] = useState('#f1e9e9')
 
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === 'system' ? systemTheme : theme
 
   useEffect(() => {
     if (currentTheme === 'light') {
-      setSphereLine('#000000')
-      setSphereColor('#ffffff')
+      setSphereLine('#151414')
+      setSphereColor('#f1e9e9')
     } else if (currentTheme === 'dark') {
-      setSphereLine('#ffffff')
+      setSphereLine('#f1e9e9')
       setSphereColor('#0c0101')
     }
   }, [currentTheme])
