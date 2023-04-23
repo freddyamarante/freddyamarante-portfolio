@@ -11,10 +11,10 @@ function Sphere({ scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }) {
   return (
     <>
       <group position={position} rotation={rotation}>
-        <Float>
+        <Float speed={0.25}>
           <primitive object={lines} />
           <mesh>
-            <sphereGeometry args={[scale - 0.09, 36, 18]} />
+            <sphereGeometry args={[scale - 0.04, 36, 18]} />
             <meshBasicMaterial color="#0c0101" />
           </mesh>
         </Float>
