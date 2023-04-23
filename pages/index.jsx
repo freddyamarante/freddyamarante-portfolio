@@ -15,7 +15,11 @@ export default function Home() {
       <section className="h-screen">
         <div className="h-full px-8 py-10 justify-center items-center">
           <div className="flex flex-row h-full w-full border-2 border-white justify-center items-center">
-            <Canvas legacy>
+            <Canvas
+              onCreated={({ gl }) => {
+                gl.toneMapping = THREE.NoToneMapping
+              }}
+            >
               <Experience />
             </Canvas>
           </div>
