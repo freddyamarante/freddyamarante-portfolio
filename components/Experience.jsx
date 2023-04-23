@@ -2,6 +2,8 @@ import * as THREE from 'three'
 import { CameraShake } from '@react-three/drei'
 import Sphere from './Sphere'
 
+THREE.ColorManagement.legacyMode = false
+
 const config = {
   maxYaw: 0.005,
   maxPitch: 0.1,
@@ -29,8 +31,8 @@ export default function Experience() {
         rotation={[0, 0, Math.PI / 2 + 1.2]}
       />
       <Sphere
-        scale={3}
-        position={[12, 0, 0]}
+        scale={4}
+        position={[14, -2, -5]}
         rotation={[0, 0, Math.PI / 2 + 1.2]}
       />
       <Sphere

@@ -19,6 +19,7 @@ export default function Home() {
               onCreated={({ gl }) => {
                 gl.toneMapping = THREE.NoToneMapping
               }}
+              color={true}
             >
               <Experience />
             </Canvas>
