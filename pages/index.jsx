@@ -12,7 +12,7 @@ const amarante = Amarante({ weight: '400', subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`flex flex-col text-white ${merriweather.className} overflow-x-hidden`}
+      className={`flex flex-col text-white ${merriweather.className} overflow-x-hidden dark`}
     >
       <section className="h-screen">
         <div className="h-full px-8 py-10 justify-center items-center">
