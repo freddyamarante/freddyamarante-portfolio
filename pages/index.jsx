@@ -1,7 +1,5 @@
 import { Merriweather, Amarante } from 'next/font/google'
-import { Canvas } from '@react-three/fiber'
 import Experience from '@/components/Experience/Experience'
-import * as THREE from 'three'
 
 import DarkModeToggle from '@/components/DarkModeToggle'
 
@@ -19,14 +17,7 @@ export default function Home() {
       <section className="h-screen">
         <div className="h-full px-8 py-10 justify-center items-center">
           <div className="flex flex-row h-full w-full border-2 dark:border-white justify-center items-center">
-            <Canvas
-              onCreated={({ gl }) => {
-                gl.toneMapping = THREE.NoToneMapping
-              }}
-              color={true}
-            >
-              <Experience />
-            </Canvas>
+            <Experience />
             <div className="absolute flex flex-col justify-content text-center max-w-sm lg:max-w-lg">
               <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
                 Greetings, my name is
