@@ -7,7 +7,7 @@ THREE.ColorManagement.legacyMode = false
 export default function Experience() {
   return (
     <>
-      <Sphere />
+      <Sphere scale={1} />
     </>
   )
 }

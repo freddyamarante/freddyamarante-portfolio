@@ -1,8 +1,8 @@
 import * as THREE from 'three'
 import { Float } from '@react-three/drei'
 
-function Sphere() {
-  const geometry = new THREE.SphereGeometry(2, 48, 48)
+function Sphere({ scale = 1 }) {
+  const geometry = new THREE.SphereGeometry(scale, 48, 48)
   const material = new THREE.LineBasicMaterial({ color: 0xd3d3d3 })
   const wireframe = new THREE.EdgesGeometry(geometry)
 
@@ -13,7 +13,7 @@ function Sphere() {
       <Float>
         <primitive object={lines} />
         <mesh>
-          <sphereGeometry args={[1.99, 36, 18]} />
+          <sphereGeometry args={[scale - 0.01, 36, 18]} />
           <meshBasicMaterial color="#040101" />
         </mesh>
       </Float>
