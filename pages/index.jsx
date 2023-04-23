@@ -29,7 +29,7 @@ export default function Home() {
               <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
                 Greetings, my name is
               </h2>
-              <h1 className={`text-4xl lg:text-6xl ${amarante.className}`}>
+              <h1 className={`text-4xl lg:text-6xl pt-2 ${amarante.className}`}>
                 Freddy Amarante
               </h1>
               <p className="text-sm w-64 lg:w-auto mx-auto lg:text-xl pt-4">
