@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply dark:bg-white bg-blackbean
+@layer base{
+  body {
+      @apply dark:bg-blackbean bg-white
+  }
 }

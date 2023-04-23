@@ -1,7 +1,9 @@
 import { Merriweather, Amarante } from 'next/font/google'
 import { Canvas } from '@react-three/fiber'
-import Experience from '@/components/Experience'
+import Experience from '@/components/Experience/Experience'
 import * as THREE from 'three'
+
+import DarkModeToggle from '@/components/DarkModeToggle'
 
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
@@ -12,11 +14,11 @@ const amarante = Amarante({ weight: '400', subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`flex flex-col text-white ${merriweather.className} overflow-x-hidden dark`}
+      className={`flex flex-col text-black dark:text-white ${merriweather.className} overflow-x-hidden dark`}
     >
       <section className="h-screen">
         <div className="h-full px-8 py-10 justify-center items-center">
-          <div className="flex flex-row h-full w-full border-2 border-white justify-center items-center">
+          <div className="flex flex-row h-full w-full border-2 dark:border-white justify-center items-center">
             <Canvas
               onCreated={({ gl }) => {
                 gl.toneMapping = THREE.NoToneMapping
@@ -37,6 +39,7 @@ export default function Home() {
                 user interfaces. And you&apos;re looking at one of my latest
                 creations right now.
               </p>
+              <DarkModeToggle />
             </div>
           </div>
         </div>
