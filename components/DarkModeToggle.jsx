@@ -6,7 +6,6 @@ export default function DarkModeToggle() {
   const [darkMode, setDarkMode] = useState(false)
 
   const { systemTheme, theme, setTheme } = useTheme()
-  const currentTheme = theme === 'system' ? systemTheme : theme
 
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode
