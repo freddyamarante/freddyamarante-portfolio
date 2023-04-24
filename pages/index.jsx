@@ -17,16 +17,14 @@ export default function Home() {
   console.log(theme)
 
   return (
-    <main
-      className={`dark text-night dark:text-white ${merriweather.className}`}
-    >
+    <main className={`text-night dark:text-white ${merriweather.className}`}>
       <div className="flex flex-col overflow-x-hidden">
         <section className="flex flex-col h-screen">
           <nav className="relative flex flex-row justify-end pt-4 pr-8">
             <DarkModeToggle />
           </nav>
-          <div className="h-full max-h-[88vh] border-2 border-night mx-8 mt-4 mb-10 justify-center items-center">
-            <div className="flex border-2 h-full dark:border-white w-full justify-center items-center">
+          <div className="h-full max-h-[88vh] border-2 border-night dark:border-white mx-8 mt-4 mb-10 justify-center items-center">
+            <div className="flex h-full  w-full justify-center items-center">
               <Suspense>
                 <Experience />
               </Suspense>
@@ -49,8 +47,8 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col h-screen">
-          <div className="h-full border-2 border-night mx-8 mt-4 mb-10 justify-center items-center">
-            <div className="border-2 h-full dark:border-white w-full justify-center items-center">
+          <div className="h-full border-2 border-night dark:border-white mx-8 mt-4 mb-10 justify-center items-center">
+            <div className="h-full  w-full justify-center items-center">
               <div className="grid grid-rows-2 lg:grid-cols-2 justify-items-center">
                 <div className="flex flex-col px-12 py-8">
                   <h1>Hola chavale</h1>
