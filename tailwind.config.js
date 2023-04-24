@@ -10,9 +10,8 @@ module.exports = {
       colors: {
         white: '#f1e9e9',
         blackbean: '#0c0101',
-        darkcyan: '#00807b',
-        flame: '#dc6125',
-        saffron: '#e2bd37',
+        darkcyan: '#2A4494',
+        flame: '#9e0031',
         night: '#151414',
       },
     },

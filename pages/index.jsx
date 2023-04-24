@@ -1,6 +1,7 @@
 import { Merriweather, Amarante } from 'next/font/google'
-import Experience from '@/components/Experience/Experience'
+import { useTheme } from 'next-themes'
 
+import Experience from '@/components/Experience/Experience'
 import DarkModeToggle from '@/components/DarkModeToggle'
 
 const merriweather = Merriweather({
@@ -10,16 +11,23 @@ const merriweather = Merriweather({
 const amarante = Amarante({ weight: '400', subsets: ['latin'] })
 
 export default function Home() {
+  const { systemTheme, theme } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme
+
   return (
     <main
       className={`flex flex-col text-night dark:text-white ${merriweather.className} overflow-x-hidden dark`}
     >
       <section className="flex flex-col h-screen">
-        <nav class="relative flex flex-row justify-end pt-2 pr-8">
+        <nav class="relative flex flex-row justify-end pt-4 pr-8">
           <DarkModeToggle />
         </nav>
         <div className="h-full px-8 pt-4 pb-10 justify-center items-center">
-          <div className="flex flex-row h-full w-full border-2 dark:border-white justify-center items-center">
+          <div
+            className={`flex flex-row h-full border-2 ${
+              currentTheme === 'light' ? 'border-night' : 'border-white'
+            } w-full justify-center items-center`}
+          >
             <Experience />
             <div className="absolute flex flex-col justify-content text-center max-w-sm lg:max-w-lg">
               <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
