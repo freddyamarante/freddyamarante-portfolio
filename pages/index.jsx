@@ -22,9 +22,9 @@ export default function Home() {
         <nav class="relative flex flex-row justify-end pt-4 pr-8">
           <DarkModeToggle />
         </nav>
-        <div className="h-full px-8 pt-4 pb-10 justify-center items-center">
+        <div className="h-full max-h-[95vh] px-8 pt-4 pb-10 justify-center items-center">
           <div
-            className={`flex flex-row h-full border-2 ${
+            className={`flex flex-row border-2 h-full ${
               currentTheme === 'light' ? 'border-night' : 'border-white'
             } w-full justify-center items-center`}
           >
