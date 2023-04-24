@@ -25,8 +25,8 @@ export default function Home() {
           <nav className="relative flex flex-row justify-end pt-4 pr-8">
             <DarkModeToggle />
           </nav>
-          <div className="h-full max-h-[95vh] border-2 border-night mx-8 mt-4 mb-10 justify-center items-center">
-            <div className="flex flex-row border-2 h-full dark:border-white w-full justify-center items-center">
+          <div className="h-full max-h-[88vh] border-2 border-night mx-8 mt-4 mb-10 justify-center items-center">
+            <div className="flex border-2 h-full dark:border-white w-full justify-center items-center">
               <Suspense>
                 <Experience />
               </Suspense>
@@ -48,7 +48,34 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="h-screen w-screen p-24"></div>
+        <section className="flex flex-col h-screen">
+          <div className="h-full border-2 border-night mx-8 mt-4 mb-10 justify-center items-center">
+            <div className="border-2 h-full dark:border-white w-full justify-center items-center">
+              <div className="grid grid-rows-2 lg:grid-cols-2 justify-items-center">
+                <div className="flex flex-col px-12 py-8">
+                  <h1>Hola chavale</h1>
+                  <h2>Soy tu pana</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos unde non, soluta quibusdam a fuga esse cumque aliquid
+                    saepe, quo similique sequi dolor officiis? Eaque dignissimos
+                    id veniam, eligendi facilis quos ad provident assumenda
+                    ipsum voluptate esse, molestiae reiciendis earum nihil!
+                    Laudantium magnam dicta mollitia quidem hic, optio tenetur
+                    reiciendis est officia porro sunt nisi voluptas dolorum
+                    praesentium magni debitis totam aliquam voluptatem qui quia!
+                    Culpa, amet, nihil eos consectetur corporis est labore fugit
+                    dolorem consequuntur cumque, dolor officia velit magnam.
+                    Omnis unde, commodi eveniet, sunt officia voluptates vero
+                    itaque a optio architecto dolor illum beatae cumque eos, hic
+                    voluptatum?
+                  </p>
+                </div>
+                <div className="order-first mt-12 lg:order-last mx-auto w-96 h-96 bg-green-500"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   )
