@@ -1,8 +1,9 @@
 import { Merriweather, Amarante } from 'next/font/google'
 import { useTheme } from 'next-themes'
+import { Suspense } from 'react'
 
-import Experience from '@/components/Experience/Experience'
 import DarkModeToggle from '@/components/DarkModeToggle'
+import Experience from '@/components/Experience/Experience'
 
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
@@ -19,7 +20,7 @@ export default function Home() {
       className={`flex flex-col text-night dark:text-white ${merriweather.className} overflow-x-hidden dark`}
     >
       <section className="flex flex-col h-screen">
-        <nav class="relative flex flex-row justify-end pt-4 pr-8">
+        <nav className="relative flex flex-row justify-end pt-4 pr-8">
           <DarkModeToggle />
         </nav>
         <div className="h-full max-h-[95vh] px-8 pt-4 pb-10 justify-center items-center">
@@ -28,7 +29,9 @@ export default function Home() {
               currentTheme === 'light' ? 'border-night' : 'border-white'
             } w-full justify-center items-center`}
           >
-            <Experience />
+            <Suspense>
+              <Experience />
+            </Suspense>
             <div className="absolute flex flex-col justify-content text-center max-w-sm lg:max-w-lg">
               <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
                 Greetings, my name is
