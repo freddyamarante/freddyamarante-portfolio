@@ -24,11 +24,11 @@ export default function Home() {
             <DarkModeToggle />
           </nav>
           <div className="h-full max-h-[88vh] border-2 border-night dark:border-white mx-8 mt-4 mb-10 justify-center items-center">
-            <div className="flex h-full  w-full justify-center items-center">
+            <div className="flex h-full w-full justify-center items-center">
               <Suspense>
                 <Experience />
               </Suspense>
-              <div className="absolute flex flex-col justify-content text-center max-w-sm lg:max-w-lg">
+              <div className="absolute justify-content text-center max-w-sm lg:max-w-lg">
                 <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
                   Greetings, my name is
                 </h2>
