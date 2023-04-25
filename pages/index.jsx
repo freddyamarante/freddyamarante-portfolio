@@ -1,5 +1,4 @@
 import { Merriweather, Amarante } from 'next/font/google'
-import { useTheme } from 'next-themes'
 import { Suspense } from 'react'
 import Image from 'next/image'
 
@@ -13,10 +12,6 @@ const merriweather = Merriweather({
 const amarante = Amarante({ weight: '400', subsets: ['latin'] })
 
 export default function Home() {
-  const { systemTheme, theme } = useTheme()
-
-  console.log(theme)
-
   return (
     <main className={`text-night dark:text-white ${merriweather.className}`}>
       <div className="flex flex-col overflow-x-hidden">
@@ -94,7 +89,7 @@ export default function Home() {
                   pellentesque consectetur facilisis.
                 </p>
               </div>
-              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-6 lg:aspect-none">
+              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-7 lg:aspect-none">
                 <Image
                   className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14 max-h-lg outline outline-night dark:outline-white outline-offset-[-32px] lg:outline-offset-[-56px]"
                   src="/andrew-neel.jpg"
