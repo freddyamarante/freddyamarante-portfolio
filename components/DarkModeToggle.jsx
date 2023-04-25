@@ -27,7 +27,9 @@ export default function DarkModeToggle() {
     <div className="flex flex-row items-center">
       {wasClicked ? null : (
         <div className="flex flex-row animate-pulse pr-2">
-          <div class="text-xs xs:text-sm">Activate/deactivate dark mode!</div>
+          <div className="text-xs xs:text-sm">
+            Activate/deactivate dark mode!
+          </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
