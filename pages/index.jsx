@@ -30,15 +30,17 @@ export default function Home() {
                 <Experience />
               </Suspense>
               <div className="absolute text-center max-w-sm lg:max-w-lg">
-                <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
+                <h2
+                  className={`text-lg xs:text-2xl lg:text-4xl ${amarante.className}`}
+                >
                   Greetings, my name is
                 </h2>
                 <h1
-                  className={`text-4xl lg:text-6xl pt-2 ${amarante.className}`}
+                  className={`text-3xl xs:text-4xl lg:text-6xl pt-2 ${amarante.className}`}
                 >
                   Freddy Amarante
                 </h1>
-                <p className="text-sm w-64 lg:w-auto mx-auto lg:text-xl pt-4">
+                <p className="text-xs xs:text-sm w-48 xs:w-64 lg:w-auto mx-auto lg:text-xl pt-4">
                   I&apos;m passionate about building stunning landing pages and
                   user interfaces. And you&apos;re looking at one of my latest
                   creations right now.
@@ -52,16 +54,16 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center ">
                 <h1
-                  className={`${amarante.className} text-4xl sm:text-5xl lg:text-6xl mb-2`}
+                  className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl mb-2`}
                 >
                   Cooler than your average developer
                 </h1>
                 <h2
-                  className={`${amarante.className} text-2xl lg:text-3xl mb-8`}
+                  className={`${amarante.className} text-xl xs:text-2xl lg:text-3xl mb-8`}
                 >
                   and definitely not cocky...
                 </h2>
-                <p className="text-lg lg:text-2xl mb-8">
+                <p className="text-sm lg:text-lg mb-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   quis aliquam arcu. Pellentesque habitant morbi tristique
                   senectus et netus et malesuada fames ac turpis egestas. Aenean
@@ -76,7 +78,7 @@ export default function Home() {
                   turpis at dolor. Donec vel ullamcorper tortor. Phasellus
                   pellentesque consectetur facilisis.
                 </p>
-                <p className="text-lg lg:text-2xl mb-8">
+                <p className="text-sm lg:text-lg mb-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                   quis aliquam arcu. Pellentesque habitant morbi tristique
                   senectus et netus et malesuada fames ac turpis egestas. Aenean
@@ -92,7 +94,7 @@ export default function Home() {
                   pellentesque consectetur facilisis.
                 </p>
               </div>
-              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-6 lg:aspect-none dark:outline outline-offset-[-34px] lg:outline-offset-[-56px] outline-4">
+              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-9 lg:aspect-none dark:outline outline-offset-[-34px] lg:outline-offset-[-56px] outline-4">
                 <Image
                   className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14"
                   src="/andrew-neel.jpg"

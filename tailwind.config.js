@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +10,7 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
+
   theme: {
     extend: {
       colors: {
@@ -16,6 +19,10 @@ module.exports = {
         marian: '#2A4494',
         madder: '#9e0031',
         night: '#151414',
+      },
+      screens: {
+        xs: '360px',
+        ...defaultTheme.screens,
       },
     },
   },
