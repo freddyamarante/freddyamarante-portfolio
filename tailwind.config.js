@@ -16,8 +16,8 @@ module.exports = {
       colors: {
         white: '#f1e9e9',
         blackbean: '#0c0101',
-        marian: '#2A4494',
-        madder: '#9e0031',
+        marian: '#2a4494',
+        madder: '#990c0c',
         night: '#151414',
       },
       screens: {

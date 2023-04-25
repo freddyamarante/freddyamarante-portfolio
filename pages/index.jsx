@@ -31,7 +31,7 @@ export default function Home() {
                   Greetings, my name is
                 </h2>
                 <h1
-                  className={`text-3xl xs:text-4xl lg:text-6xl pt-2 ${amarante.className}`}
+                  className={`text-3xl xs:text-4xl lg:text-6xl pt-2 ${amarante.className} text-marian dark:text-madder`}
                 >
                   Freddy Amarante
                 </h1>
@@ -47,9 +47,24 @@ export default function Home() {
         <section className="flex flex-col">
           <div className="h-full border-2 border-night dark:border-white mx-8 mt-4 mb-10 ">
             <div className="flex flex-col lg:flex-row justify-between">
-              <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center ">
+              <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center">
+                <div class="flex flex-row items-center pb-3 lg:pb-12">
+                  <svg
+                    viewBox="0 0 100 100"
+                    class="h-4 w-4 mr-2 text-marian dark:text-madder"
+                  >
+                    <rect
+                      x="10"
+                      y="10"
+                      width="80"
+                      height="80"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <div class="uppercase text-sm font-semibold">About me</div>
+                </div>
                 <h1
-                  className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl mb-2`}
+                  className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl mb-2 underline decoration-4 underline-offset-4 decoration-marian dark:decoration-madder`}
                 >
                   Cooler than your average developer
                 </h1>

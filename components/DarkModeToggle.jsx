@@ -24,15 +24,15 @@ export default function DarkModeToggle() {
   }
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row items-center">
       {wasClicked ? null : (
-        <div className="flex flex-row animate-pulse">
-          <div class="text-sm">Activate/deactivate dark mode!</div>
+        <div className="flex flex-row animate-pulse pr-2">
+          <div class="text-xs xs:text-sm">Activate/deactivate dark mode!</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="w-5 h-5"
+            className="w-3 h-3 mt-[1px] sm:w-5 sm:h-5 sm:mt-0"
           >
             <path
               fillRule="evenodd"
@@ -48,14 +48,14 @@ export default function DarkModeToggle() {
         onChange={toggleDarkMode}
         onClick={handleFirstSwitchClick}
         className={`${
-          darkMode ? 'bg-white' : 'bg-night'
+          darkMode ? 'bg-white' : 'bg-marian'
         } relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer border-2 border-transparent transition-colors duration-200 ease-in-out`}
       >
         <span className="sr-only">Use setting</span>
         <span
           className={`${
             darkMode ? 'translate-x-5 bg-blackbean' : 'translate-x-0 bg-white'
-          } pointer-events-none relative inline-block h-5 w-5 transform shadow ring-0 transition duration-200 ease-in-out`}
+          } pointer-events-none relative inline-block h-5 w-5 transform shadow transition duration-200 ease-in-out`}
         >
           <span
             className={`${
