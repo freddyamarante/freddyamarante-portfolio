@@ -94,9 +94,9 @@ export default function Home() {
                   pellentesque consectetur facilisis.
                 </p>
               </div>
-              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-9 lg:aspect-none dark:outline outline-offset-[-34px] lg:outline-offset-[-56px] outline-4">
+              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-6 lg:aspect-none">
                 <Image
-                  className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14"
+                  className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14 max-h-lg outline outline-night dark:outline-white outline-offset-[-32px] lg:outline-offset-[-56px]"
                   src="/andrew-neel.jpg"
                   alt="Freddy Amarante"
                   width={511}
