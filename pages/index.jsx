@@ -1,6 +1,7 @@
 import { Merriweather, Amarante } from 'next/font/google'
 import { useTheme } from 'next-themes'
 import { Suspense } from 'react'
+import Image from 'next/image'
 
 import DarkModeToggle from '@/components/DarkModeToggle'
 import Experience from '@/components/Experience/Experience'
@@ -28,7 +29,7 @@ export default function Home() {
               <Suspense>
                 <Experience />
               </Suspense>
-              <div className="absolute justify-content text-center max-w-sm lg:max-w-lg">
+              <div className="absolute text-center max-w-sm lg:max-w-lg">
                 <h2 className={`text-2xl lg:text-4xl ${amarante.className}`}>
                   Greetings, my name is
                 </h2>
@@ -46,30 +47,59 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex flex-col h-screen">
-          <div className="h-full border-2 border-night dark:border-white mx-8 mt-4 mb-10 justify-center items-center">
-            <div className="h-full  w-full justify-center items-center">
-              <div className="grid grid-rows-2 lg:grid-cols-2 justify-items-center">
-                <div className="flex flex-col px-12 py-8">
-                  <h1>Hola chavale</h1>
-                  <h2>Soy tu pana</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quos unde non, soluta quibusdam a fuga esse cumque aliquid
-                    saepe, quo similique sequi dolor officiis? Eaque dignissimos
-                    id veniam, eligendi facilis quos ad provident assumenda
-                    ipsum voluptate esse, molestiae reiciendis earum nihil!
-                    Laudantium magnam dicta mollitia quidem hic, optio tenetur
-                    reiciendis est officia porro sunt nisi voluptas dolorum
-                    praesentium magni debitis totam aliquam voluptatem qui quia!
-                    Culpa, amet, nihil eos consectetur corporis est labore fugit
-                    dolorem consequuntur cumque, dolor officia velit magnam.
-                    Omnis unde, commodi eveniet, sunt officia voluptates vero
-                    itaque a optio architecto dolor illum beatae cumque eos, hic
-                    voluptatum?
-                  </p>
-                </div>
-                <div className="order-first mt-12 lg:order-last mx-auto w-96 h-96 bg-green-500"></div>
+        <section className="flex flex-col">
+          <div className="h-full border-2 border-night dark:border-white mx-8 mt-4 mb-10 ">
+            <div className="flex flex-col lg:flex-row justify-between">
+              <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center ">
+                <h1
+                  className={`${amarante.className} text-5xl lg:text-6xl mb-2`}
+                >
+                  Cooler than your average developer
+                </h1>
+                <h2
+                  className={`${amarante.className} text-2xl lg:text-3xl mb-8`}
+                >
+                  and definitely not cocky...
+                </h2>
+                <p className="text-lg lg:text-2xl mb-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  quis aliquam arcu. Pellentesque habitant morbi tristique
+                  senectus et netus et malesuada fames ac turpis egestas. Aenean
+                  iaculis turpis non turpis condimentum auctor. Nullam tortor
+                  tellus, egestas non dapibus nec, convallis at nisl. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                  mauris velit, volutpat et felis id, vehicula tempus turpis.
+                  Etiam lacinia purus ac mi fringilla, at pellentesque justo
+                  pharetra. Morbi vulputate varius lectus, a pulvinar odio
+                  lobortis semper. Ut hendrerit, magna gravida ullamcorper
+                  faucibus, justo massa euismod enim, et ullamcorper lorem
+                  turpis at dolor. Donec vel ullamcorper tortor. Phasellus
+                  pellentesque consectetur facilisis.
+                </p>
+                <p className="text-lg lg:text-2xl mb-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  quis aliquam arcu. Pellentesque habitant morbi tristique
+                  senectus et netus et malesuada fames ac turpis egestas. Aenean
+                  iaculis turpis non turpis condimentum auctor. Nullam tortor
+                  tellus, egestas non dapibus nec, convallis at nisl. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                  mauris velit, volutpat et felis id, vehicula tempus turpis.
+                  Etiam lacinia purus ac mi fringilla, at pellentesque justo
+                  pharetra. Morbi vulputate varius lectus, a pulvinar odio
+                  lobortis semper. Ut hendrerit, magna gravida ullamcorper
+                  faucibus, justo massa euismod enim, et ullamcorper lorem
+                  turpis at dolor. Donec vel ullamcorper tortor. Phasellus
+                  pellentesque consectetur facilisis.
+                </p>
+              </div>
+              <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-6 lg:aspect-none dark:outline outline-offset-[-34px] lg:outline-offset-[-56px] outline-4">
+                <Image
+                  className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14"
+                  src="/andrew-neel.jpg"
+                  alt="Freddy Amarante"
+                  width={511}
+                  height={767}
+                />
               </div>
             </div>
           </div>

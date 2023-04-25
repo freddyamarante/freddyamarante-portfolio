@@ -5,6 +5,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  corePlugins: {
+    aspectRatio: false,
+  },
   theme: {
     extend: {
       colors: {
@@ -16,6 +19,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
   darkMode: 'class',
 }
