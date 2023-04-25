@@ -8,13 +8,12 @@ THREE.ColorManagement.enabled = false
 
 const config = {
   maxYaw: 0.005,
-  maxPitch: 0.1,
-  maxRoll: 0.1,
+  maxPitch: 0.5,
+  maxRoll: 0.5,
   yawFrequency: 0.1,
   pitchFrequency: 0.1,
   rollFrequency: 0.1,
   intensity: 0.5,
-  decay: false,
   decayRate: 0.65,
 }
 
