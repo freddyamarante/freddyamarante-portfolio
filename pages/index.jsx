@@ -52,7 +52,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row justify-between">
               <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center ">
                 <h1
-                  className={`${amarante.className} text-5xl lg:text-6xl mb-2`}
+                  className={`${amarante.className} text-4xl sm:text-5xl lg:text-6xl mb-2`}
                 >
                   Cooler than your average developer
                 </h1>
