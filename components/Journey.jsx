@@ -12,21 +12,21 @@ export default function Journey() {
   return (
     <div className="border-2 border-night dark:border-white mx-8 mt-4 mb-10 ">
       <div className="flex flex-col px-8 lg:px-20 py-20">
-        <div class="flex lg:hidden justify-between mb-8">
-          <div class="flex flex-row">
+        <div className="flex lg:hidden justify-between mb-8">
+          <div className="flex flex-row">
             <svg
               viewBox="0 0 100 100"
-              class="h-4 w-4 mr-2 text-marian dark:text-madder"
+              className="h-4 w-4 mr-2 text-marian dark:text-madder"
             >
               <rect x="10" y="10" width="80" height="80" fill="currentColor" />
             </svg>
             <div className="uppercase text-sm font-black">Journey</div>
           </div>
-          <div class="uppercase text-sm font-black text-right">
+          <div className="uppercase text-sm font-black text-right">
             Last updated: 25/04/23
           </div>
         </div>
-        <div className="flex flex-row justify-center lg:justify-between items-center basis-1/6 mb-6">
+        <div className="flex flex-row justify-center lg:justify-between items-center basis-1/6 mb-8 lg:mb-14">
           <div className="hidden lg:flex flex-row items-center">
             <svg
               viewBox="0 0 100 100"
@@ -70,7 +70,9 @@ export default function Journey() {
             />
           </div>
           <div className="row-span-6 col-start-4 col-span-6 mx-8">
-            <JourneyExperience />
+            <div className="flex h-full w-full justify-center items-center">
+              <JourneyExperience />
+            </div>
           </div>
           <div className="flex flex-col justify-between row-span-6 col-span-3">
             <Skill

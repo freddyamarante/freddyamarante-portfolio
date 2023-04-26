@@ -6,11 +6,7 @@ export default function JourneyExperience() {
   return (
     <>
       <Canvas flat>
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-          dampingFactor={0.005}
-        />
+        <OrbitControls enablePan={false} dampingFactor={0.005} />
         <Sphere scale={2.8} />
       </Canvas>
     </>
