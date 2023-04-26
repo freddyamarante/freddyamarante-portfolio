@@ -12,7 +12,7 @@ export default function Skill({
   rightside = false,
 }) {
   return (
-    <div className="flex flex-col pl-4">
+    <div className="flex flex-col pl-4 mb-24">
       <div
         className={`flex flex-row items-center ${
           rightside ? 'justify-end' : ''

@@ -11,42 +11,48 @@ const amarante = Amarante({
 export default function Journey() {
   return (
     <div className="border-2 border-night dark:border-white mx-8 mt-4 mb-10 ">
-      <div className="flex flex-col h-screen p-20">
-        <div className="flex flex-col justify-center">
-          <div className="flex flex-row justify-between items-center basis-1/6 mb-6">
-            <div class="flex flex-row items-center">
-              <svg
-                viewBox="0 0 100 100"
-                class="h-4 w-4 mr-2 text-marian dark:text-madder"
-              >
-                <rect
-                  x="10"
-                  y="10"
-                  width="80"
-                  height="80"
-                  fill="currentColor"
-                />
-              </svg>
-              <div className="uppercase text-sm font-black">Journey</div>
-            </div>
-            <h1
-              className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl mb-2 underline decoration-4 underline-offset-4 decoration-marian dark:decoration-madder`}
+      <div className="flex flex-col px-8 lg:px-20 py-20">
+        <div class="flex lg:hidden justify-between mb-8">
+          <div class="flex flex-row">
+            <svg
+              viewBox="0 0 100 100"
+              class="h-4 w-4 mr-2 text-marian dark:text-madder"
             >
-              My journey as a developer
-            </h1>
-            <div class="uppercase text-sm font-black">
-              Last updated: 25/04/23
-            </div>
+              <rect x="10" y="10" width="80" height="80" fill="currentColor" />
+            </svg>
+            <div className="uppercase text-sm font-black">Journey</div>
           </div>
-          <div className="text-left text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            aliquam arcu. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
-            non turpis condimentum auctor. Nullam tortor tellus, egestas non
-            dapibus nec, convallis at nisl.
+          <div class="uppercase text-sm font-black text-right">
+            Last updated: 25/04/23
           </div>
         </div>
-        <div className="basis-full grid grid-cols-12 grid-rows-6 mt-8">
+        <div className="flex flex-row justify-center lg:justify-between items-center basis-1/6 mb-6">
+          <div className="hidden lg:flex flex-row items-center">
+            <svg
+              viewBox="0 0 100 100"
+              className="h-4 w-4 mr-2 text-marian dark:text-madder"
+            >
+              <rect x="10" y="10" width="80" height="80" fill="currentColor" />
+            </svg>
+            <div className="uppercase text-sm font-black">Journey</div>
+          </div>
+          <h1
+            className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-center mb-2 px-2 underline decoration-4 underline-offset-4 decoration-marian dark:decoration-madder`}
+          >
+            My journey as a developer
+          </h1>
+          <div className="uppercase text-sm font-black hidden lg:block">
+            Last updated: 25/04/23
+          </div>
+        </div>
+        <div className="text-left text-md lg:text-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
+          aliquam arcu. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Aenean iaculis turpis non turpis
+          condimentum auctor. Nullam tortor tellus, egestas non dapibus nec,
+          convallis at nisl.
+        </div>
+        <div className="basis-full grid grid-cols-12 grid-rows-6 mt-16 gap-8">
           <div className="flex flex-col justify-between row-span-6 col-span-3">
             <Skill
               skill="HTML, CSS & JS (2019)"
