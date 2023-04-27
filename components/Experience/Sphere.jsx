@@ -1,11 +1,19 @@
 import * as THREE from 'three'
 import { useTheme } from 'next-themes'
 import { Float } from '@react-three/drei'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { useFrame } from '@react-three/fiber'
 
 THREE.ColorManagement.enabled = false
 
-function Sphere({ scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }) {
+function Sphere({
+  scale = 1,
+  position = [0, 0, 0],
+  rotation = [0, 0, 0],
+  rotate = false,
+}) {
+  const sphere = useRef()
+
   const [sphereLine, setSphereLine] = useState('#151414')
   const [sphereColor, setSphereColor] = useState('#f1e9e9')
 
@@ -28,10 +36,16 @@ function Sphere({ scale = 1, position = [0, 0, 0], rotation = [0, 0, 0] }) {
 
   const lines = new THREE.LineSegments(wireframe, material)
 
+  useFrame(() => {
+    if (rotate) {
+      sphere.current.rotation.y += 0.001
+    }
+  })
+
   return (
     <>
-      <group position={position} rotation={rotation}>
-        <Float speed={0.25}>
+      <group ref={sphere} position={position} rotation={rotation}>
+        <Float speed={rotate ? 0 : 0.6}>
           <primitive object={lines} />
           <mesh>
             <sphereGeometry args={[scale - 0.004, 36, 18]} />

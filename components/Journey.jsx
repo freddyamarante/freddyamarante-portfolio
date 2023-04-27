@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import JourneyExperience from './Experience/JourneyExperience'
 import Skill from './Skill'
 import { Amarante } from 'next/font/google'
+import { Canvas } from '@react-three/fiber'
 
 const amarante = Amarante({
   weight: '400',
@@ -103,7 +104,9 @@ export default function Journey() {
               </div>
               <div className="flex justify-center align-center w-full lg:w-1/2 mx-6 h-[8rem] xs:h-[15rem] sm:h-[28rem] md:h-[40rem] lg:h-[24rem] xl:h-[32rem] 2xl:h-[40rem] order-3 lg:order-2">
                 <Suspense>
-                  <JourneyExperience />
+                  <Canvas flat>
+                    <JourneyExperience />
+                  </Canvas>
                 </Suspense>
               </div>
             </div>

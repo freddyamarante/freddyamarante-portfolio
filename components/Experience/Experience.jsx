@@ -13,7 +13,7 @@ const config = {
   yawFrequency: 0.1,
   pitchFrequency: 0.1,
   rollFrequency: 0.1,
-  intensity: 0.5,
+  intensity: 0.3,
   decayRate: 0.65,
 }
 
