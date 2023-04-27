@@ -16,7 +16,7 @@ export default function Hero() {
       <nav className="relative flex flex-row justify-end pt-4 pr-8">
         <DarkModeToggle />
       </nav>
-      <div className="h-full max-h-[88vh] border-2 border-night dark:border-white mx-8 mt-4 mb-10 justify-center items-center">
+      <div className="h-full max-h-[88vh] border-2 border-night dark:border-white justify-center items-center mx-2 lg:mx-8 my-5">
         <div className="flex h-full w-full justify-center items-center">
           <Suspense>
             <Experience />

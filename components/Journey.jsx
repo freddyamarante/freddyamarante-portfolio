@@ -11,7 +11,7 @@ const amarante = Amarante({
 export default function Journey() {
   return (
     <section>
-      <div className="border-2 border-night dark:border-white mx-8 mt-4 mb-10 ">
+      <div className="border-2 border-night dark:border-white mx-2 lg:mx-8 my-5 ">
         <div className="flex flex-col px-8 lg:px-20 py-20 basis-1/6">
           <div className="flex lg:hidden justify-between mb-8">
             <div className="flex flex-row">
