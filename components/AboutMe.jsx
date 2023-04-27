@@ -12,7 +12,7 @@ export default function AboutMe() {
     <section>
       <div className="h-full border-2 border-night dark:border-white mx-2 lg:mx-8 my-5 ">
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-col lg:w-2/3 px-8 lg:py-20 lg:pr-8 lg:pl-20 justify-center">
+          <div className="flex flex-col lg:w-2/3 px-8 pb-10 lg:py-20 lg:pr-8 lg:pl-20 justify-center">
             <div className="flex flex-row items-center pb-3 lg:pb-12">
               <svg
                 viewBox="0 0 100 100"

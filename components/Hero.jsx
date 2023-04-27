@@ -21,18 +21,18 @@ export default function Hero() {
           <Suspense>
             <Experience />
           </Suspense>
-          <div className="absolute text-center max-w-sm lg:max-w-lg">
+          <div className="absolute text-center max-w-sm xs:max-w-lg lg:max-w-xl">
             <h2
-              className={`text-lg xs:text-2xl lg:text-4xl ${amarante.className}`}
+              className={`text-2xl xs:text-2xl md:text-4xl lg:text-5xl ${amarante.className}`}
             >
               Greetings, my name is
             </h2>
             <h1
-              className={`text-3xl xs:text-4xl lg:text-6xl pt-2 ${amarante.className} text-marian dark:text-madder`}
+              className={`text-4xl xs:text-4xl md:text-6xl lg:text-7xl pt-2 ${amarante.className} text-marian dark:text-madder`}
             >
               Freddy Amarante
             </h1>
-            <p className="text-xs xs:text-sm w-48 xs:w-64 lg:w-auto mx-auto lg:text-xl pt-4">
+            <p className="text-sm sm:text-md md:text-lg lg:text-xl w-48 xs:w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto pt-4">
               I&apos;m passionate about building stunning landing pages and user
               interfaces. And you&apos;re looking at one of my latest creations
               right now.

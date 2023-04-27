@@ -27,14 +27,18 @@ export default function Skill({
           <rect x="10" y="10" width="80" height="80" fill="currentColor" />
         </svg>
         <h2
-          className={`text-2xl underline decoration-2 underline-offset-4 decoration-marian dark:decoration-madder ${
+          className={`text-2xl sm:text-4xl lg:text-2xl underline decoration-2 underline-offset-4 decoration-marian dark:decoration-madder ${
             amarante.className
           } ${rightside ? 'text-right' : ''}`}
         >
           {skill}
         </h2>
       </div>
-      <p className={`mt-2 ${rightside ? 'text-right pr-5' : 'pl-5'}`}>
+      <p
+        className={`sm:text-lg md:text-xl lg:text-md mt-2 ${
+          rightside ? 'text-right pr-5' : 'pl-5'
+        }`}
+      >
         {description}
       </p>
     </div>

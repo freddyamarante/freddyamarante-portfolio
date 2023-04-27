@@ -1,10 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import {
-  OrbitControls,
-  MeshTransmissionMaterial,
-  Sphere,
-  Environment,
-} from '@react-three/drei'
+import { OrbitControls, Center } from '@react-three/drei'
 
 export default function JourneyExperience() {
   return (
@@ -15,14 +10,14 @@ export default function JourneyExperience() {
           enablePan={false}
           dampingFactor={0.005}
         />
-        <Environment preset="city" near={1} far={1000} resolution={256} />
-        <Sphere args={[2.9, 64, 64]}>
-          <MeshTransmissionMaterial
-            transmission={0.3}
-            roughness={0.1}
-            metalness={0.9}
-          />
-        </Sphere>
+        <ambientLight intensity={1} color="#2a4494" />
+
+        <Center>
+          <mesh>
+            <sphereGeometry args={[3, 48, 48]} />
+            <meshStandardMaterial color="#2a4494" />
+          </mesh>
+        </Center>
       </Canvas>
     </>
   )

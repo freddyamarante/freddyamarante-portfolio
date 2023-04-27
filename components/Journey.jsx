@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import JourneyExperience from './Experience/JourneyExperience'
 import Skill from './Skill'
 import { Amarante } from 'next/font/google'
@@ -58,7 +59,7 @@ export default function Journey() {
               Last updated: 25/04/23
             </div>
           </div>
-          <div className="text-left text-md lg:text-xl">
+          <div className="text-left text-md lg:text-xl mb-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
             aliquam arcu. Pellentesque habitant morbi tristique senectus et
             netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
@@ -66,8 +67,8 @@ export default function Journey() {
             dapibus nec, convallis at nisl.
           </div>
           <div className="basis-full">
-            <div className="lg:flex lg:justify-between flex-row mt-8">
-              <div className="flex flex-col lg:w-1/2">
+            <div className="flex flex-col lg:flex-row justify-center items-center">
+              <div className="flex flex-col w-full lg:w-1/4 order-1 lg:order-1">
                 <Skill
                   skill="HTML, CSS & JS (2019)"
                   description="Learned basic web development at college in 2018, that's when I fell in love with it!"
@@ -83,12 +84,7 @@ export default function Journey() {
                   description="Used Figma with the help of a great Codecademy course to learn and apply to my projects. Concepts like SWOT Analysis, Conceptual Design and Prototyping were my main focus. "
                 />
               </div>
-              <div className="flex justify-center items-center w-full mx-6 bg-red-500">
-                <div className="border h-full w-full">
-                  <JourneyExperience />
-                </div>
-              </div>
-              <div className="flex flex-col lg:w-1/2">
+              <div className="flex flex-col w-full lg:w-1/4 order-2 lg:order-3">
                 <Skill
                   skill="React (2021)"
                   description="Swapped to React in order to use R3F, what I didn't expect was it becoming my main framework in the projects to come! I also love how well it works with Tailwind."
@@ -104,6 +100,11 @@ export default function Journey() {
                   description="Fell in love with WebGL once I got my hands on Three.js and React Three Fiber. Seems like 3D visuals on front end projects are my thing now."
                   rightside
                 />
+              </div>
+              <div className="flex justify-center align-center w-full lg:w-1/2 mx-6 h-[8rem] xs:h-[15rem] sm:h-[28rem] md:h-[40rem] lg:h-[24rem] xl:h-[32rem] 2xl:h-[40rem] order-3 lg:order-2">
+                <Suspense>
+                  <JourneyExperience />
+                </Suspense>
               </div>
             </div>
           </div>
