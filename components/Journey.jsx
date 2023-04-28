@@ -2,7 +2,6 @@ import { Suspense } from 'react'
 import JourneyExperience from './Experience/JourneyExperience'
 import { Amarante } from 'next/font/google'
 import { Canvas } from '@react-three/fiber'
-import Image from 'next/image'
 
 import Skill from './Skill'
 
@@ -175,7 +174,7 @@ export default function Journey() {
                     height="502"
                     viewBox="1.2 .4 352.2 70.9"
                     width="2500"
-                    className="max-h-36 w-full h-full object-contain fill-night dark:fill-white"
+                    className="min-h-20 max-h-24 w-full h-full object-contain fill-night dark:fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="m264 25.5v44.7h-14.4v-51.7z" />

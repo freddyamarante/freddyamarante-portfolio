@@ -7,7 +7,7 @@ export default function JourneyExperience() {
       <OrbitControls
         enableZoom={false}
         enablePan={false}
-        dampingFactor={0.001}
+        dampingFactor={0.01}
       />
 
       <Sphere scale={2.9} rotate />
