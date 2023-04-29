@@ -39,7 +39,11 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap justify-center mt-4 gap-4">
               {/* Github */}
-              <a href="https://github.com/freddyamarante">
+              <a
+                href="https://github.com/freddyamarante"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   width="43"
                   height="42"
@@ -52,7 +56,11 @@ export default function Hero() {
                 </svg>
               </a>
               {/* LinkedIn */}
-              <a href="https://www.linkedin.com/in/freddy-amarante/">
+              <a
+                href="https://www.linkedin.com/in/freddy-amarante/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   width="43"
                   height="42"
@@ -65,7 +73,11 @@ export default function Hero() {
                 </svg>
               </a>
               {/* Twitter */}
-              <a href="https://twitter.com/thecoolerdev">
+              <a
+                href="https://twitter.com/thecoolerdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   width="43"
                   height="42"
