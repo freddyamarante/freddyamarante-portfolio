@@ -61,7 +61,7 @@ export default function Journey() {
               Last updated: 25/04/23
             </div>
           </div>
-          <div className="text-left text-md lg:text-xl mb-20">
+          <div className="text-left text-lg lg:text-xl mb-20">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
             aliquam arcu. Pellentesque habitant morbi tristique senectus et
             netus et malesuada fames ac turpis egestas. Aenean iaculis turpis

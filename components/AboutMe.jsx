@@ -38,7 +38,7 @@ export default function AboutMe() {
             >
               and definitely not cocky...
             </h2>
-            <p className="text-md lg:text-lg mb-8">
+            <p className="text-lg mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
               aliquam arcu. Pellentesque habitant morbi tristique senectus et
               netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
@@ -52,7 +52,7 @@ export default function AboutMe() {
               ullamcorper lorem turpis at dolor. Donec vel ullamcorper tortor.
               Phasellus pellentesque consectetur facilisis.
             </p>
-            <p className="text-md lg:text-lg mb-8">
+            <p className="text-lg mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
               aliquam arcu. Pellentesque habitant morbi tristique senectus et
               netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
