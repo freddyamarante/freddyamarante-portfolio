@@ -76,7 +76,7 @@ export default function Hero() {
               </div>
               <button
                 type="button"
-                className="flex justify-center items-center gap-2 bg-night dark:bg-white px-2 text-xs font-semibold text-white dark:text-night dark:hover:text-night shadow-sm hover:bg-marian dark:hover:bg-madder focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
+                className="flex justify-center items-center gap-2 bg-transparent border-2 border-night dark:border-white px-2 text-xs font-semibold text-night dark:text-white hover:text-white dark:hover:text-night shadow-sm hover:bg-night dark:hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
