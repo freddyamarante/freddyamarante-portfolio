@@ -36,8 +36,55 @@ export default function Projects() {
             </div>
           </div>
           {/* Projects here */}
-          <Project />
-          <Project />
+          <Project
+            title="Freelance e-commerce project using Shopify"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            imageSrc="/andrew-neel.jpg"
+            pointTitle1="Applied Shopify Liquid to create and edit sections on the Shopify
+            Theme"
+            pointDescription1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            pointTitle2="Used my skills in CSS to adapt the website to the customer's
+            design language"
+            pointDescription2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            pointTitle3="Demonstrated ability to effectively manage time and meet deadlines
+            while working in an agile framework"
+            pointDescription3="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+          />
+          <Project
+            title="Marble Race game using React Three Fiber"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            imageSrc="/andrew-neel.jpg"
+            pointTitle1="Utilized Zustand for streamlined state management and improved React application performance"
+            pointDescription1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            pointTitle2="Utilized React Three Fiber tools to create a fun project with replayability"
+            pointDescription2="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+            pointTitle3="Employed Rapier to ensure realistic physics interactions"
+            pointDescription3="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
+            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
+            efficitur ullamcorper dapibus."
+          />
         </div>
       </div>
     </section>

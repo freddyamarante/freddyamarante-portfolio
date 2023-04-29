@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Amarante } from 'next/font/google'
+import { images } from '@/next.config'
 
 const amarante = Amarante({
   weight: '400',
@@ -8,7 +9,17 @@ const amarante = Amarante({
   variable: '--font-amarante',
 })
 
-export default function Project() {
+export default function Project({
+  title = 'Title',
+  description = 'Description',
+  imageSrc = '',
+  pointTitle1 = 'Point title 1',
+  pointDescription1 = 'Point description 1',
+  pointTitle2 = 'Point title 2',
+  pointDescription2 = 'Point description 2',
+  pointTitle3 = 'Point title 3',
+  pointDescription3 = 'Point description 3',
+}) {
   return (
     <div className="pb-20 lg:pb-28 px-0 lg:px-8">
       <div className="flex flex-col lg:flex-row">
@@ -16,18 +27,13 @@ export default function Project() {
           <h1
             className={`${amarante.className} text-4xl sm:text-5xl lg:text-4xl xl:text-5xl`}
           >
-            Freelance e-commerce project using Shopify
+            {title}
           </h1>
-          <p className="text-lg xl:text-xl py-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
-            scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
-            efficitur ullamcorper dapibus.
-          </p>
+          <p className="text-lg xl:text-xl py-6">{description}</p>
           <div className="aspect-h-4 aspect-w-5">
             <Image
               className="object-center object-cover"
-              src="/andrew-neel.jpg"
+              src={imageSrc}
               alt="Freddy Amarante"
               width={511}
               height={767}
@@ -37,39 +43,21 @@ export default function Project() {
         <div className="flex flex-col basis-3/5 mt-12 lg:mt-0 lg:pl-28 justify-center">
           <div className="pb-8">
             <h3 className="text-2xl xl:text-3xl font-bold pb-4">
-              Applied Shopify Liquid to create and edit sections on the Shopify
-              Theme
+              {pointTitle1}
             </h3>
-            <p className="text-lg xl:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
-              scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
-              efficitur ullamcorper dapibus.
-            </p>
+            <p className="text-lg xl:text-xl">{pointDescription1}</p>
           </div>
           <div className="pb-8">
             <h3 className="text-2xl xl:text-3xl font-bold pb-4">
-              Used my skills in CSS to adapt the website to the customer&apos;s
-              design language
+              {pointTitle2}
             </h3>
-            <p className="text-lg xl:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
-              scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
-              efficitur ullamcorper dapibus.
-            </p>
+            <p className="text-lg xl:text-xl">{pointDescription2}</p>
           </div>
           <div className="pb-8">
             <h3 className="text-2xl xl:text-3xl font-bold pb-4">
-              Demonstrated ability to effectively manage time and meet deadlines
-              while working in an agile framework
+              {pointTitle3}
             </h3>
-            <p className="text-lg xl:text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
-              scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
-              efficitur ullamcorper dapibus.
-            </p>
+            <p className="text-lg xl:text-xl">{pointDescription3}</p>
           </div>
           <div className="flex flex-col md:flex-row gap-y-4 gap-x-20 mx-auto mt-10">
             <button
