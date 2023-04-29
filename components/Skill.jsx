@@ -35,7 +35,7 @@ export default function Skill({
         </h2>
       </div>
       <p
-        className={`sm:text-lg md:text-xl lg:text-md mt-2 ${
+        className={`text-lg md:text-xl lg:text-md mt-2 ${
           rightside ? 'text-right pr-5' : 'pl-5'
         }`}
       >
