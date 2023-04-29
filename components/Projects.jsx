@@ -61,6 +61,7 @@ export default function Projects() {
             venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
             scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
             efficitur ullamcorper dapibus."
+            url="https://terrafusionshop.com/"
           />
           <Project
             title="Marble Race game using React Three Fiber"
@@ -84,6 +85,8 @@ export default function Projects() {
             venenatis sem ac lorem laoreet scelerisque. Nam id nulla ut nunc
             scelerisque efficitur ut vitae arcu. Sed vel porttitor mi. Etiam
             efficitur ullamcorper dapibus."
+            url="https://ballrace-r3f.vercel.app/"
+            repository="https://github.com/freddyamarante/ballrace-r3f"
           />
         </div>
       </div>
