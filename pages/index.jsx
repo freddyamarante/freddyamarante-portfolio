@@ -4,6 +4,7 @@ import Journey from '@/components/Journey'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Projects from '@/components/Projects'
+import ContactMe from '@/components/ContactMe'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <AboutMe />
           <Journey />
           <Projects />
+          <ContactMe />
         </div>
       </main>
     </>
