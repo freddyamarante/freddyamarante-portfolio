@@ -31,7 +31,7 @@ export default function Project({
             {title}
           </h1>
           <p className="text-lg xl:text-xl py-6">{description}</p>
-          <div className="aspect-h-4 aspect-w-5">
+          <div className="aspect-h-7 aspect-w-5">
             <Image
               className="object-center object-cover"
               src={imageSrc}
