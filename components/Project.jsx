@@ -61,12 +61,12 @@ export default function Project({
             <p className="text-lg xl:text-xl">{pointDescription3}</p>
           </div>
           {url === '' && repository === '' ? null : (
-            <div className="flex flex-col md:flex-row gap-y-4 gap-x-20 mx-auto mt-10">
+            <div className="flex flex-col md:flex-row items-center gap-y-4 gap-x-20 mx-auto mt-10">
               {url === '' ? null : (
                 <a href={url} target="_blank" rel="noopener noreferrer">
                   <button
                     type="button"
-                    className="flex justify-center items-center gap-2 bg-night dark:bg-white px-20 md:px-10 py-2.5 text-lg font-semibold text-white dark:text-night dark:hover:text-night shadow-sm hover:bg-marian dark:hover:bg-madder focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
+                    className="flex justify-center items-center gap-2 bg-night dark:bg-white w-96 lg:w-64 xl:w-96 px-20 md:px-10 py-2.5 text-lg font-semibold text-white dark:text-night dark:hover:text-night shadow-sm hover:bg-marian dark:hover:bg-madder focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ export default function Project({
                 <a href={repository} target="_blank" rel="noopener noreferrer">
                   <button
                     type="button"
-                    className="flex items-center gap-2 justify-center bg-white dark:bg-blackbean border-2 border-night dark:border-white px-3.5 md:px-10 py-2.5 text-lg font-semibold text-night dark:text-white dark:hover:text-white shadow-sm hover:bg-gray-300 dark:hover:bg-stone-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
+                    className="flex items-center gap-2 justify-center bg-white dark:bg-blackbean border-2 w-96 lg:w-64 xl:w-96 border-night dark:border-white px-20 md:px-10 py-2.5 text-lg font-semibold text-night dark:text-white dark:hover:text-white shadow-sm hover:bg-gray-300 dark:hover:bg-stone-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
                   >
                     <svg
                       width="25"

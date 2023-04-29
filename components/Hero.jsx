@@ -37,7 +37,7 @@ export default function Hero() {
               interfaces. And you&apos;re looking at one of my latest creations
               right now.
             </p>
-            <div className="flex flex-wrap justify-center mt-4 gap-4">
+            <div className="flex flex-wrap justify-center items-center mt-4 gap-4">
               {/* Github */}
               <a
                 href="https://github.com/freddyamarante"
@@ -97,7 +97,7 @@ export default function Hero() {
               >
                 <button
                   type="button"
-                  className="flex justify-center items-center gap-2 bg-transparent border-2 border-night dark:border-white px-2 text-xs font-semibold text-night dark:text-white hover:text-white dark:hover:text-night shadow-sm hover:bg-night dark:hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
+                  className="flex justify-center items-center gap-2 bg-transparent border-2 border-night dark:border-white px-2 py-1 text-sm md:text-md font-black text-night dark:text-white hover:text-white dark:hover:text-night shadow-sm hover:bg-night dark:hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
