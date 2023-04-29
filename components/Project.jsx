@@ -23,8 +23,8 @@ export default function Project({
 }) {
   return (
     <div className="pb-20 lg:pb-28 px-0 lg:px-8">
-      <div className="flex flex-col lg:flex-row">
-        <div className="flex flex-col basis-2/5 justify-end">
+      <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col basis-2/5 justify-center">
           <h1
             className={`${amarante.className} text-4xl sm:text-5xl lg:text-4xl xl:text-5xl`}
           >
@@ -41,7 +41,7 @@ export default function Project({
             />
           </div>
         </div>
-        <div className="flex flex-col basis-3/5 mt-12 lg:mt-0 lg:pl-28 justify-center">
+        <div className="flex flex-col basis-3/5 mt-12 xl:mt-0 xl:pl-28 justify-center">
           <div className="pb-8">
             <h3 className="text-2xl xl:text-3xl font-bold pb-4">
               {pointTitle1}
@@ -65,7 +65,7 @@ export default function Project({
               <a href={url} target="_blank" rel="noopener noreferrer">
                 <button
                   type="button"
-                  className={`flex justify-center items-center gap-2 w-96 lg:w-64 xl:w-96 px-20 md:px-10 py-2.5 text-lg 
+                  className={`flex justify-center items-center gap-2 px-20 md:px-10 py-2.5 text-lg 
                   ${
                     url
                       ? 'font-semibold bg-night dark:bg-white text-white dark:text-night dark:hover:text-night shadow-sm hover:bg-marian dark:hover:bg-madder focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
@@ -102,7 +102,7 @@ export default function Project({
               >
                 <button
                   type="button"
-                  className={`flex items-center gap-2 justify-center border-2 w-96 lg:w-64 xl:w-96 px-20 md:px-10 py-2.5 text-lg
+                  className={`flex items-center gap-2 justify-center border-2 px-20 md:px-10 py-2.5 text-lg
                   ${
                     repository
                       ? ' font-semibold bg-white dark:bg-blackbean border-night dark:border-white text-night dark:text-white dark:hover:text-white shadow-sm hover:bg-gray-300 dark:hover:bg-stone-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
