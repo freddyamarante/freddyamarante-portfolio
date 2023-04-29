@@ -68,7 +68,7 @@ export default function Project({
                   className={`flex justify-center items-center gap-2 px-20 md:px-10 py-2.5 text-lg 
                   ${
                     url
-                      ? 'font-semibold bg-night dark:bg-white text-white dark:text-night dark:hover:text-night shadow-sm hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
+                      ? 'font-semibold bg-night dark:bg-white text-white dark:text-night shadow-sm hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
                       : 'font-normal bg-neutral-400 dark:bg-neutral-400 text-neutral-600 dark:text-neutral-600 border-neutral-400 dark:border-neutral-400 shadow-sm cursor-default'
                   } 
                   `}
