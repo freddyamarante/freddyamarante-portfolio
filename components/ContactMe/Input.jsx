@@ -25,7 +25,6 @@ export default function Input({
             onChange={handleChange}
             rows={6}
             className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
-            defaultValue={''}
           />
         ) : (
           <input
