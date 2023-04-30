@@ -1,4 +1,7 @@
 import { Amarante } from 'next/font/google'
+import { useState } from 'react'
+
+import { sendContactForm } from '@/lib/api'
 
 const amarante = Amarante({
   weight: '400',
@@ -6,7 +9,34 @@ const amarante = Amarante({
   variable: '--font-amarante',
 })
 
+const initValues = {
+  name: '',
+  email: '',
+  subject: '',
+  message: '',
+}
+
+const initState = { values: initValues }
+
 export default function ContactMe() {
+  const [formState, setFormState] = useState(initState)
+
+  const { values } = formState
+
+  const handleChange = ({ target }) => {
+    setFormState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }))
+  }
+
+  const handleSubmit = async () => {
+    await sendContactForm(values)
+  }
+
   return (
     <section>
       <div className="h-full mx-8 md:mx-auto md:my-12 md:max-w-7xl">
@@ -33,6 +63,8 @@ export default function ContactMe() {
                     type="text"
                     name="name"
                     id="name"
+                    value={values.name}
+                    onChange={handleChange}
                     autoComplete="given-name"
                     className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
                   />
@@ -51,6 +83,8 @@ export default function ContactMe() {
                     type="email"
                     name="email"
                     id="email"
+                    value={values.email}
+                    onChange={handleChange}
                     autoComplete="email"
                     className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
                   />
@@ -69,6 +103,8 @@ export default function ContactMe() {
                     type="text"
                     name="subject"
                     id="subject"
+                    value={values.subject}
+                    onChange={handleChange}
                     autoComplete="subject"
                     className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
                   />
@@ -86,6 +122,8 @@ export default function ContactMe() {
                   <textarea
                     name="message"
                     id="message"
+                    value={values.message}
+                    onChange={handleChange}
                     rows={6}
                     className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
                     defaultValue={''}
@@ -95,6 +133,7 @@ export default function ContactMe() {
               <div className="col-start-1 col-span-3 sm:col-start-2 sm:col-span-2 flex justify-center sm:justify-end">
                 <button
                   type="button"
+                  onClick={handleSubmit}
                   className="flex items-center font-semibold shadow-sm gap-2 px-6 py-2.5 text-lg justify-center bg-night dark:bg-white text-white dark:text-night hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
                 >
                   <svg
