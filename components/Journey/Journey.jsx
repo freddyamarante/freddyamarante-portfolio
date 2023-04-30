@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import JourneyExperience from './Experience/JourneyExperience'
+import JourneyExperience from './JourneyExperience'
 import { Amarante } from 'next/font/google'
 import { Canvas } from '@react-three/fiber'
 

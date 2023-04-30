@@ -1,5 +1,5 @@
 import { OrbitControls, Center, Float } from '@react-three/drei'
-import Sphere from './Sphere'
+import Sphere from '../Experience/Sphere'
 
 export default function JourneyExperience() {
   return (

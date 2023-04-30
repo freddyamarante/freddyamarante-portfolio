@@ -9,8 +9,8 @@ const amarante = Amarante({
 export default function ContactMe() {
   return (
     <section>
-      <div className="h-full mx-2 md:mx-auto md:my-12 md:max-w-7xl">
-        <div className="flex flex-col my-16 md:my-24 px-12 md:px-36">
+      <div className="h-full mx-8 md:mx-auto md:my-12 md:max-w-7xl">
+        <div className="flex flex-col my-16 md:my-24 px-12 md:px-20 lg:px-36">
           <h1
             className={`${amarante.className} text-2xl md:text-4xl lg:text-5xl text-center`}
           >
@@ -18,7 +18,7 @@ export default function ContactMe() {
             <br /> Whether you have a project in mind or just want to say hello,
             I&apos;m always happy to chat
           </h1>
-          <form action="#" method="POST" className="pt-8 sm:pt-18 lg:pt-20">
+          <form action="#" method="POST" className="pt-8 sm:pt-14 lg:pt-18">
             <div className="grid grid-cols-3 gap-6 mx-auto">
               {/* Name */}
               <div className="col-span-3 md:col-span-1">

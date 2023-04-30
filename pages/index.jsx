@@ -1,10 +1,11 @@
 import Head from 'next/head'
 
-import Journey from '@/components/Journey'
+import Journey from '@/components/Journey/Journey'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
-import Projects from '@/components/Projects'
+import Projects from '@/components/Projects/Projects'
 import ContactMe from '@/components/ContactMe'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <Journey />
           <Projects />
           <ContactMe />
+          <Footer />
         </div>
       </main>
     </>
