@@ -4,7 +4,7 @@ import Journey from '@/components/Journey/Journey'
 import Hero from '@/components/Hero'
 import AboutMe from '@/components/AboutMe'
 import Projects from '@/components/Projects/Projects'
-import ContactMe from '@/components/ContactMe'
+import ContactMe from '@/components/ContactMe/ContactMe'
 import Footer from '@/components/Footer'
 
 export default function Home() {
