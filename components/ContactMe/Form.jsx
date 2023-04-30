@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { sendContactForm } from '@/lib/api'
+import Input from './Input'
 
 const initValues = {
   name: '',
@@ -33,85 +34,20 @@ export default function Form() {
     <form action="#" method="POST" className="pt-8 sm:pt-14 lg:pt-18">
       <div className="grid grid-cols-3 gap-6 mx-auto">
         {/* Name */}
-        <div className="col-span-3 md:col-span-1">
-          <label
-            htmlFor="name"
-            className="block text-sm font-semibold leading-6"
-          >
-            Name
-          </label>
-          <div className="mt-1">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={values.name}
-              onChange={handleChange}
-              autoComplete="given-name"
-              className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
-            />
-          </div>
-        </div>
+        <Input label="name" type="text" id="name" name="name" span="1" />
         {/* Email */}
-        <div className="col-span-3 md:col-span-2">
-          <label
-            htmlFor="Email"
-            className="block text-sm font-semibold leading-6"
-          >
-            Email
-          </label>
-          <div className="mt-1">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={values.email}
-              onChange={handleChange}
-              autoComplete="email"
-              className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
-            />
-          </div>
-        </div>
+        <Input label="email" type="email" id="email" name="email" span={2} />
         {/* Subject */}
-        <div className="col-span-3">
-          <label
-            htmlFor="subject"
-            className="block text-sm font-semibold leading-6"
-          >
-            Subject
-          </label>
-          <div className="mt-1">
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              value={values.subject}
-              onChange={handleChange}
-              autoComplete="subject"
-              className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
-            />
-          </div>
-        </div>
+        <Input
+          label="subject"
+          type="text"
+          id="subject"
+          name="subject"
+          span={3}
+        />
         {/* Message */}
-        <div className="col-span-3">
-          <label
-            htmlFor="message"
-            className="block text-sm font-semibold leading-6"
-          >
-            Message
-          </label>
-          <div className="mt-1">
-            <textarea
-              name="message"
-              id="message"
-              value={values.message}
-              onChange={handleChange}
-              rows={6}
-              className="block w-full border-2 border-night px-3.5 py-3 text-night dark:text-white bg-transparent shadow-sm ring-2 ring-inset ring-neutral-300 placeholder:text-neutral-400 sm:leading-6"
-              defaultValue={''}
-            />
-          </div>
-        </div>
+        <Input label="message" textarea id="message" name="message" span={3} />
+        {/* Submit button */}
         <div className="col-start-1 col-span-3 sm:col-start-2 sm:col-span-2 flex justify-center sm:justify-end">
           <button
             type="button"
