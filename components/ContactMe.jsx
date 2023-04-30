@@ -92,7 +92,7 @@ export default function ContactMe() {
                   />
                 </div>
               </div>
-              <div className="col-start-1 col-span-3 sm:col-start-2 sm:col-span-2 flex justify-end">
+              <div className="col-start-1 col-span-3 sm:col-start-2 sm:col-span-2 flex justify-center sm:justify-end">
                 <button
                   type="button"
                   className="flex items-center font-semibold shadow-sm gap-2 px-6 py-2.5 text-lg justify-center bg-night dark:bg-white text-white dark:text-night hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
