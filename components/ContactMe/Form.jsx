@@ -29,8 +29,8 @@ export default function Form() {
     }))
   }
 
-  const onSubmit = methods.handleSubmit(async () => {
-    await sendContactForm(values).then(() => setFormState(initState))
+  const onSubmit = methods.handleSubmit(async (data) => {
+    await sendContactForm(data).then(() => setFormState(initState))
   })
 
   return (
