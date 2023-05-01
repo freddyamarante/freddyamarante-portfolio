@@ -61,8 +61,8 @@ export const message_validation = {
       message: 'required',
     },
     maxLength: {
-      value: 1500,
-      message: '1500 characters max',
+      value: 3000,
+      message: '3000 characters max',
     },
   },
 }
