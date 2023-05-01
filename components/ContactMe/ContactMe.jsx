@@ -5,7 +5,6 @@ import Form from './Form'
 const amarante = Amarante({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-amarante',
 })
 
 export default function ContactMe() {

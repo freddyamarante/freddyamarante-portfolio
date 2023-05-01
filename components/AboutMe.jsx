@@ -4,7 +4,6 @@ import { Amarante } from 'next/font/google'
 const amarante = Amarante({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-amarante',
 })
 
 export default function AboutMe() {

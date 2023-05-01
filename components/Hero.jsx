@@ -7,7 +7,6 @@ import { Suspense } from 'react'
 const amarante = Amarante({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-amarante',
 })
 
 export default function Hero() {
