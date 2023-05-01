@@ -21,7 +21,7 @@ const initState = { values: initValues }
 
 export default function Form() {
   const methods = useForm()
-  const [success, setSuccess] = useState(false)
+  const [success, setSuccess] = useState('')
 
   const [formState, setFormState] = useState(initState)
   const { values } = formState
@@ -40,9 +40,9 @@ export default function Form() {
     await sendContactForm(data)
       .then(() => {
         methods.reset()
-        setSuccess(true)
+        setSuccess('success')
       })
-      .catch(setSuccess(false))
+      .catch(setSuccess('failed'))
   })
 
   return (
@@ -105,12 +105,13 @@ export default function Form() {
               </svg>
               Send message
             </button>
-            {success ? (
-              <p className="flex justify-end gap-1 mt-3 font-semibold text-marian">
+            {success === '' && (
+              <p className="flex justify-end gap-1 mt-3 font-semibold text-marian dark:text-white">
                 submitted!
               </p>
-            ) : (
-              <p className="flex justify-end gap-1 mt-3 font-semibold text-madder">
+            )}
+            {success === '' && (
+              <p className="flex justify-end gap-1 mt-3 font-semibold text-madder dark:text-white">
                 something went wrong, try again later
               </p>
             )}
