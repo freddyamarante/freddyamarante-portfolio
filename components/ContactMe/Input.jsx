@@ -25,7 +25,7 @@ export const Input = ({
       <div className="flex flex-row">
         <label
           htmlFor={name}
-          className="block text-sm fo
+          className="block text-md fo
         export { findInputError } from './findInputError'
         export { isFormInvalid } from './isFormInvalid'nt-semibold leading-6 capitalize"
         >

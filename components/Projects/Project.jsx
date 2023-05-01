@@ -61,11 +61,16 @@ export default function Project({
             <p className="text-lg xl:text-xl">{pointDescription3}</p>
           </div>
           {url === '' && repository === '' ? null : (
-            <div className="flex flex-col md:flex-row items-center gap-y-4 gap-x-20 mx-auto mt-10">
-              <a href={url} target="_blank" rel="noopener noreferrer">
+            <div className="grid grid-rows-2 grid-cols-none md:grid-rows-none md:grid-cols-4 justify-between items-center gap-y-4 gap-x-8 mx-auto mt-10">
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="col-span-2"
+              >
                 <button
                   type="button"
-                  className={`flex justify-center items-center gap-2 px-20 md:px-10 py-2.5 text-lg 
+                  className={`flex justify-center items-center gap-2 px-5 py-3 w-full text-lg
                   ${
                     url
                       ? 'font-semibold bg-night dark:bg-white text-white dark:text-night shadow-sm hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
@@ -95,10 +100,11 @@ export default function Project({
                 href={repository !== '' ? repository : null}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="col-span-2"
               >
                 <button
                   type="button"
-                  className={`flex items-center gap-2 justify-center border-2 px-20 md:px-10 py-2.5 text-lg
+                  className={`flex flex-nowrap items-center gap-2 justify-center border-2 px-5 py-3 w-full text-lg
                   ${
                     repository
                       ? ' font-semibold bg-white dark:bg-blackbean border-night dark:border-white text-night dark:text-white dark:hover:text-white shadow-sm hover:bg-gray-300 dark:hover:bg-stone-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white'
