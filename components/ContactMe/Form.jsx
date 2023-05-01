@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
+import {
+  name_validation,
+  email_validation,
+  subject_validation,
+  message_validation,
+} from '@/utils/inputValidations'
 
 import { sendContactForm } from '@/lib/api'
 import { Input } from './Input'
@@ -15,6 +21,7 @@ const initState = { values: initValues }
 
 export default function Form() {
   const methods = useForm()
+  const [success, setSuccess] = useState(false)
 
   const [formState, setFormState] = useState(initState)
   const { values } = formState
@@ -30,7 +37,12 @@ export default function Form() {
   }
 
   const onSubmit = methods.handleSubmit(async (data) => {
-    await sendContactForm(data).then(() => setFormState(initState))
+    await sendContactForm(data)
+      .then(() => {
+        methods.reset()
+        setSuccess(true)
+      })
+      .catch(setSuccess(false))
   })
 
   return (
@@ -44,46 +56,34 @@ export default function Form() {
         <div className="grid grid-cols-3 gap-6 mx-auto">
           {/* Name */}
           <Input
-            label="name"
-            type="text"
-            id="name"
-            name="name"
+            {...name_validation}
             span={1}
             value={values.name}
             handleChange={handleChange}
           />
           {/* Email */}
           <Input
-            label="email"
-            type="email"
-            id="email"
-            name="email"
+            {...email_validation}
             span={2}
             value={values.email}
             handleChange={handleChange}
           />
           {/* Subject */}
           <Input
-            label="subject"
-            type="text"
-            id="subject"
-            name="subject"
+            {...subject_validation}
             span={3}
             value={values.subject}
             handleChange={handleChange}
           />
           {/* Message */}
           <Input
-            label="message"
-            textarea
-            id="message"
-            name="message"
+            {...message_validation}
             span={3}
             value={values.message}
             handleChange={handleChange}
           />
           {/* Submit button */}
-          <div className="col-start-1 col-span-3 sm:col-start-2 sm:col-span-2 flex justify-center sm:justify-end">
+          <div className="flex flex-col justify-center sm:justify-end col-start-1 col-span-3 sm:col-start-3 sm:col-span-1">
             <button
               type="button"
               onClick={onSubmit}
@@ -105,6 +105,15 @@ export default function Form() {
               </svg>
               Send message
             </button>
+            {success ? (
+              <p className="flex justify-end gap-1 mt-3 font-semibold text-marian">
+                submitted!
+              </p>
+            ) : (
+              <p className="flex justify-end gap-1 mt-3 font-semibold text-madder">
+                something went wrong, try again later
+              </p>
+            )}
           </div>
         </div>
       </form>

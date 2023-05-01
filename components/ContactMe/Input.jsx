@@ -14,7 +14,7 @@ export const Input = ({
 }) => {
   const {
     register,
-    formsState: { errors },
+    formState: { errors },
   } = useFormContext()
 
   const inputError = findInputError(errors, label)
@@ -22,22 +22,24 @@ export const Input = ({
 
   return (
     <div className={`col-span-${span}`}>
-      <label
-        htmlFor={name}
-        className="block text-sm fo
+      <div className="flex flex-row">
+        <label
+          htmlFor={name}
+          className="block text-sm fo
         export { findInputError } from './findInputError'
         export { isFormInvalid } from './isFormInvalid'nt-semibold leading-6 capitalize"
-      >
-        {label}
-      </label>
-      <AnimatePresence mode="wait" initial={false}>
-        {isInvalid && (
-          <InputError
-            message={inputError.error.message}
-            key={inputError.error.message}
-          />
-        )}
-      </AnimatePresence>
+        >
+          {label}
+        </label>
+        <AnimatePresence mode="wait" initial={false}>
+          {isInvalid && (
+            <InputError
+              message={inputError.error.message}
+              key={inputError.error.message}
+            />
+          )}
+        </AnimatePresence>
+      </div>
       <div className="mt-1">
         {textarea ? (
           <textarea
@@ -77,17 +79,17 @@ export const Input = ({
 const InputError = ({ message }) => {
   return (
     <motion.p
-      className="flex items-center gap-1 px-2 text-madder bg-red-100 rounded-md"
+      className="flex items-center ml-2 gap-1 text-madder"
       {...framer_error}
     >
-      {message}
+      *{message}
     </motion.p>
   )
 }
 
 const framer_error = {
-  initial: { opacity: 0, y: 10 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: 10 },
+  initial: { opacity: 0, x: 10 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 10 },
   transition: { duration: 0.2 },
 }
