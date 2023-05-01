@@ -105,12 +105,12 @@ export default function Form() {
               </svg>
               Send message
             </button>
-            {success === '' && (
+            {success === 'success' && (
               <p className="flex justify-end gap-1 mt-3 font-semibold text-marian dark:text-white">
                 submitted!
               </p>
             )}
-            {success === '' && (
+            {success === 'failed' && (
               <p className="flex justify-end gap-1 mt-3 font-semibold text-madder dark:text-white">
                 something went wrong, try again later
               </p>

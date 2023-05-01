@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="bg-night dark:bg-white text-white dark:text-night mx-auto w-full max-w-5xl py-8">
+      <footer className="bg-night dark:bg-transparent border-2 border-night dark:border-white border-b-0 text-white mx-auto w-full max-w-5xl py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2  gap-x-2  gap-y-4 justify-center text-center text-lg font-semibold">
           <div className="flex justify-center  items-center gap-2">
             <svg
