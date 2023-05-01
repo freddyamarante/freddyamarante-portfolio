@@ -1,24 +1,43 @@
 import { useFormContext } from 'react-hook-form'
+import { AnimatePresence, motion } from 'framer-motion'
 
-export default function Input({
+import { findInputError, isFormInvalid } from '@/utils'
+
+export const Input = ({
   label = 'label',
   type = 'text',
   id,
   name,
   span = 3,
   textarea = false,
-  value,
   handleChange,
-}) {
-  const { register } = useFormContext()
+}) => {
+  const {
+    register,
+    formsState: { errors },
+  } = useFormContext()
+
+  const inputError = findInputError(errors, label)
+  const isInvalid = isFormInvalid(inputError)
+
   return (
-    <div className={`col-span-3 md:col-span-${span}`}>
+    <div className={`col-span-${span}`}>
       <label
         htmlFor={name}
-        className="block text-sm font-semibold leading-6 capitalize"
+        className="block text-sm fo
+        export { findInputError } from './findInputError'
+        export { isFormInvalid } from './isFormInvalid'nt-semibold leading-6 capitalize"
       >
         {label}
       </label>
+      <AnimatePresence mode="wait" initial={false}>
+        {isInvalid && (
+          <InputError
+            message={inputError.error.message}
+            key={inputError.error.message}
+          />
+        )}
+      </AnimatePresence>
       <div className="mt-1">
         {textarea ? (
           <textarea
@@ -53,4 +72,22 @@ export default function Input({
       </div>
     </div>
   )
+}
+
+const InputError = ({ message }) => {
+  return (
+    <motion.p
+      className="flex items-center gap-1 px-2 text-madder bg-red-100 rounded-md"
+      {...framer_error}
+    >
+      {message}
+    </motion.p>
+  )
+}
+
+const framer_error = {
+  initial: { opacity: 0, y: 10 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 10 },
+  transition: { duration: 0.2 },
 }

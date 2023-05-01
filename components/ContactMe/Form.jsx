@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
 
 import { sendContactForm } from '@/lib/api'
-import Input from './Input'
+import { Input } from './Input'
 
 const initValues = {
   name: '',
