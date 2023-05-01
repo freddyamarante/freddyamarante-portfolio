@@ -35,35 +35,40 @@ export default function AboutMe() {
             <h2
               className={`${amarante.className} text-xl xs:text-2xl lg:text-3xl mb-8`}
             >
-              and definitely not cocky...
+              Venezuelan front-end developer with a love for web development,
+              carbonated drinks, and FC Barcelona.
             </h2>
-            <p className="text-lg mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-              aliquam arcu. Pellentesque habitant morbi tristique senectus et
-              netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
-              non turpis condimentum auctor. Nullam tortor tellus, egestas non
-              dapibus nec, convallis at nisl. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Vivamus mauris velit, volutpat et
-              felis id, vehicula tempus turpis. Etiam lacinia purus ac mi
-              fringilla, at pellentesque justo pharetra. Morbi vulputate varius
-              lectus, a pulvinar odio lobortis semper. Ut hendrerit, magna
-              gravida ullamcorper faucibus, justo massa euismod enim, et
-              ullamcorper lorem turpis at dolor. Donec vel ullamcorper tortor.
-              Phasellus pellentesque consectetur facilisis.
+            <p className="text-lg mb-6">
+              Hi there! I&apos;m Freddy Amarante, a passionate web developer &
+              designer from Venezuela. My interest in programming began while
+              studying Systems Engineering in Lima, Peru, where I discovered my
+              true passion for web development & design. During my college
+              years, I developed my skills in algorithms, programming patterns,
+              and models, and became proficient in HTML, CSS, & JS, which served
+              as the foundation for most of my college projects.
             </p>
-            <p className="text-lg mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-              aliquam arcu. Pellentesque habitant morbi tristique senectus et
-              netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
-              non turpis condimentum auctor. Nullam tortor tellus, egestas non
-              dapibus nec, convallis at nisl. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Vivamus mauris velit, volutpat et
-              felis id, vehicula tempus turpis. Etiam lacinia purus ac mi
-              fringilla, at pellentesque justo pharetra. Morbi vulputate varius
-              lectus, a pulvinar odio lobortis semper. Ut hendrerit, magna
-              gravida ullamcorper faucibus, justo massa euismod enim, et
-              ullamcorper lorem turpis at dolor. Donec vel ullamcorper tortor.
-              Phasellus pellentesque consectetur facilisis.
+            <p className="text-lg mb-6">
+              After college, I started taking my self-taught learning journey
+              more seriously and began mastering React and TypeScript. I also
+              completed Bruno Simon&apos;s Three.js Journey, a course that took
+              my skills in web development to the next level by creating amazing
+              WebGL experiences using JS frameworks like Three.js and React
+              Three Fiber. Now, I&apos;m focused on contributing to open-source
+              projects, freelancing, and building projects that will continue to
+              challenge and improve my skills. When I&apos;m not coding, I enjoy
+              playing video games and football (FC Barcelona is my favorite
+              team).
+            </p>
+            <p className="text-lg mb-6">
+              As a web developer, my main goal is to create meaningful digital
+              experiences for users. I strongly believe that good design and
+              user experience can make a huge difference in the success of a
+              project. I have experience in designing and developing responsive,
+              user-friendly websites that not only look great but also deliver
+              great results. I&apos;m a hard worker, an eager learner, and
+              always open to new challenges and opportunities. I&apos;m
+              currently freelancing, and I&apos;m looking forward to working
+              with companies that value creativity, innovation, and teamwork.
             </p>
           </div>
           <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-7 lg:aspect-none">

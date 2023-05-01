@@ -61,11 +61,17 @@ export default function Journey() {
             </div>
           </div>
           <div className="text-left text-lg lg:text-xl mb-20">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis
-            aliquam arcu. Pellentesque habitant morbi tristique senectus et
-            netus et malesuada fames ac turpis egestas. Aenean iaculis turpis
-            non turpis condimentum auctor. Nullam tortor tellus, egestas non
-            dapibus nec, convallis at nisl.
+            In college, I discovered my passion for web development and design
+            while studying Systems Engineering. Learning the basics of HTML,
+            CSS, and JS ignited my interest and led me to explore further. I
+            used my free time to dive deeper into programming and learned new
+            technologies like React, TypeScript, and Nuxt, building projects and
+            gaining valuable experience along the way. Today, I continue to
+            learn and explore new technologies, always striving to stay
+            up-to-date with the latest trends and techniques. My journey has
+            been an exciting and fulfilling one, and I look forward to the
+            challenges and opportunities that lie ahead as I continue to grow
+            and evolve.
           </div>
           <div className="basis-full">
             <div className="flex flex-col lg:flex-row justify-center items-center">

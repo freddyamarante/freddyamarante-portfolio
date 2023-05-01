@@ -22,9 +22,9 @@ export default function Hero() {
           </Suspense>
           <div className="absolute text-center max-w-sm xs:max-w-lg lg:max-w-xl">
             <h2
-              className={`text-2xl xs:text-2xl md:text-4xl lg:text-5xl ${amarante.className}`}
+              className={`text-2xl xs:text-2xl md:text-3xl lg:text-4xl ${amarante.className}`}
             >
-              Greetings, my name is
+              Greetings, I am
             </h2>
             <h1
               className={`text-4xl xs:text-4xl md:text-6xl lg:text-7xl pt-2 ${amarante.className} text-marian dark:text-madder`}
@@ -32,9 +32,8 @@ export default function Hero() {
               Freddy Amarante
             </h1>
             <p className="text-sm sm:text-md md:text-lg lg:text-xl w-48 xs:w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto pt-4">
-              I&apos;m passionate about building stunning landing pages and user
-              interfaces. And you&apos;re looking at one of my latest creations
-              right now.
+              I&apos;m a frond-end developer, passionate about building stunning
+              landing pages and user interfaces.
             </p>
             <div className="flex flex-wrap justify-center items-center mt-4 gap-4">
               {/* Github */}
