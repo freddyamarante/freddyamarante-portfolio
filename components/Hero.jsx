@@ -1,8 +1,8 @@
 import { Amarante } from 'next/font/google'
+import { Suspense, lazy, useEffect, useState } from 'react'
 
 import DarkModeToggle from '@/components/DarkModeToggle'
-import Experience from '@/components/Experience/Experience'
-import { Suspense } from 'react'
+const Experience = lazy(() => import('@/components/Experience/Experience'))
 
 const amarante = Amarante({
   weight: '400',
@@ -10,6 +10,11 @@ const amarante = Amarante({
 })
 
 export default function Hero() {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
   return (
     <section className="h-screen">
       <nav className="relative flex flex-row justify-end pt-4 pr-8">
@@ -17,9 +22,12 @@ export default function Hero() {
       </nav>
       <div className="h-full max-h-[88vh] border-2 border-night dark:border-white justify-center items-center mx-2 lg:mx-8 my-5">
         <div className="flex h-full w-full justify-center items-center">
-          <Suspense>
-            <Experience />
-          </Suspense>
+          {isMounted && (
+            <Suspense>
+              <Experience />
+            </Suspense>
+          )}
+
           <div className="absolute text-center max-w-sm xs:max-w-lg lg:max-w-xl">
             <h2
               className={`text-2xl xs:text-2xl md:text-3xl lg:text-4xl ${amarante.className}`}
