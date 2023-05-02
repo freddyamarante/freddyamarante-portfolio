@@ -4,8 +4,6 @@ import { Float } from '@react-three/drei'
 import { useEffect, useState, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-THREE.ColorManagement.enabled = false
-
 function Sphere({
   scale = 1,
   position = [0, 0, 0],
