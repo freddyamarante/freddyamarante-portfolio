@@ -35,8 +35,8 @@ export default function Project({
               className="object-center object-cover"
               src={imageSrc}
               alt="Freddy Amarante"
-              width={511}
-              height={767}
+              width={1920}
+              height={1080}
             />
           </div>
         </div>

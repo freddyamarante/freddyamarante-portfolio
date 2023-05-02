@@ -9,10 +9,10 @@ const amarante = Amarante({
 export default function AboutMe() {
   return (
     <section>
-      <div className="h-full border-2 border-night dark:border-white mx-2 lg:mx-8 my-5 ">
-        <div className="flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-col lg:w-2/3 px-8 pb-10 lg:py-20 lg:pr-8 lg:pl-20 justify-center">
-            <div className="flex flex-row items-center pb-3 lg:pb-12">
+      <div className="h-full border-2 border-night dark:border-white mx-2 xl:mx-8 my-5 ">
+        <div className="flex flex-col xl:flex-row justify-between">
+          <div className="flex flex-col xl:w-1/2 px-8 pb-10 xl:py-20 xl:pr-8 xl:pl-20 justify-center">
+            <div className="flex flex-row items-center pb-3 xl:pb-12">
               <svg
                 viewBox="0 0 100 100"
                 className="h-4 w-4 mr-2 text-marian dark:text-madder"
@@ -38,7 +38,7 @@ export default function AboutMe() {
               Venezuelan front-end developer with a love for web development,
               carbonated drinks, and FC Barcelona.
             </h2>
-            <p className="text-lg mb-6">
+            <p className="text-lg md:text-xl mb-6">
               Hi there! I&apos;m Freddy Amarante, a passionate web developer &
               designer from Venezuela. My interest in programming began while
               studying Systems Engineering in Lima, Peru, where I discovered my
@@ -47,19 +47,8 @@ export default function AboutMe() {
               and models, and became proficient in HTML, CSS, & JS, which served
               as the foundation for most of my college projects.
             </p>
-            <p className="text-lg mb-6">
-              After college, I started taking my self-taught learning journey
-              more seriously and began mastering React and TypeScript. I also
-              completed Bruno Simon&apos;s Three.js Journey, a course that took
-              my skills in web development to the next level by creating amazing
-              WebGL experiences using JS frameworks like Three.js and React
-              Three Fiber. Now, I&apos;m focused on contributing to open-source
-              projects, freelancing, and building projects that will continue to
-              challenge and improve my skills. When I&apos;m not coding, I enjoy
-              playing video games and football (FC Barcelona is my favorite
-              team).
-            </p>
-            <p className="text-lg mb-6">
+
+            <p className="text-lg md:text-xl mb-6">
               As a web developer, my main goal is to create meaningful digital
               experiences for users. I strongly believe that good design and
               user experience can make a huge difference in the success of a
@@ -71,9 +60,9 @@ export default function AboutMe() {
               with companies that value creativity, innovation, and teamwork.
             </p>
           </div>
-          <div className="flex lg:w-1/2 order-first lg:order-last justify-center aspect-w-8 aspect-h-7 lg:aspect-none">
+          <div className="flex xl:w-1/2 my-auto xl:h-full order-first xl:order-last justify-center aspect-w-8 aspect-h-7 xl:aspect-none">
             <Image
-              className="object-center object-cover lg:w-full lg:h-full p-8 lg:p-14 max-h-lg outline outline-night dark:outline-white outline-offset-[-32px] lg:outline-offset-[-56px]"
+              className="object-center object-cover xl:w-full xl:h-full p-8 lg:p-14 max-h-lg outline outline-night dark:outline-white outline-offset-[-32px] lg:outline-offset-[-56px]"
               src="/andrew-neel.jpg"
               alt="Freddy Amarante"
               width={511}

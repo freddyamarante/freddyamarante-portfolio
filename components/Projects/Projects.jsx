@@ -38,7 +38,7 @@ export default function Projects() {
           <Project
             title="Freelance e-commerce project using Shopify"
             description="For my first freelance project, I created an e-commerce site for a French company that specializes in gastronomy, handcrafts, and unique collections from all over the world. My task was to build the site using Shopify, and I used my knowledge of Liquid to create and edit sections on the theme."
-            imageSrc="/andrew-neel.jpg"
+            imageSrc="/projects/terrafusion.png"
             pointTitle1="Applied Shopify Liquid to create and edit sections on a Shopify
             Theme"
             pointDescription1="This allowed me to build custom features that are not available out of the box on Shopify. The client was very happy with the final result, and I learned a lot about Shopify and how it can be used to create stunning e-commerce sites."
@@ -53,7 +53,7 @@ export default function Projects() {
           <Project
             title="Marble Race game using React Three Fiber"
             description="The game features a physics simulation where players race marbles on a randomly generated track. This game was made as part of the Three.js Journey final project, where I continue to add new obstacles and improvements to go further with my WebGL learning journey!"
-            imageSrc="/andrew-neel.jpg"
+            imageSrc="/projects/ballrace.png"
             pointTitle1="Utilized Zustand for streamlined state management and improved React application performance"
             pointDescription1="Leveraging the power of Zustand, I streamlined state management and improved overall application performance. With Zustand, I was able to avoid unnecessary re-renders and optimize state updates."
             pointTitle2="Utilized React Three Fiber tools to create a fun project with replayability"

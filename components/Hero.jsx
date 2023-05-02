@@ -1,5 +1,6 @@
 import { Amarante } from 'next/font/google'
 import { Suspense, lazy, useEffect, useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import DarkModeToggle from '@/components/DarkModeToggle'
 const Experience = lazy(() => import('@/components/Experience/Experience'))
@@ -22,11 +23,13 @@ export default function Hero() {
       </nav>
       <div className="h-full max-h-[88vh] border-2 border-night dark:border-white justify-center items-center mx-2 lg:mx-8 my-5">
         <div className="flex h-full w-full justify-center items-center">
-          {isMounted && (
-            <Suspense>
-              <Experience />
-            </Suspense>
-          )}
+          <AnimatePresence>
+            {isMounted && (
+              <Suspense>
+                <Experience />
+              </Suspense>
+            )}
+          </AnimatePresence>
 
           <div className="absolute text-center max-w-sm xs:max-w-lg lg:max-w-xl">
             <h2
