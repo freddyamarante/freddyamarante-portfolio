@@ -27,8 +27,8 @@ export default function Headline() {
         whileHover={{ scale: 1.1 }}
         className="text-sm sm:text-md md:text-lg lg:text-xl w-48 xs:w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto pt-4"
       >
-        I&apos;m a frond-end developer, passionate about building stunning
-        landing pages and user interfaces.
+        I&apos;m a front-end developer, passionate about building websites and
+        user interfaces.
       </motion.p>
       <div className="flex flex-wrap justify-center items-center mt-4 gap-4">
         {/* Github */}
