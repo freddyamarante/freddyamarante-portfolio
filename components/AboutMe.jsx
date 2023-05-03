@@ -114,7 +114,7 @@ export default function AboutMe() {
           >
             <Image
               className="object-center object-cover xl:w-full xl:h-full p-8 xl:p-14 xl:max-h-[56rem] outline outline-night dark:outline-white outline-offset-[-32px] xl:outline-offset-[-56px]"
-              src="/andrew-neel.jpg"
+              src="/coding.jpg"
               alt="Freddy Amarante"
               width={511}
               height={767}
