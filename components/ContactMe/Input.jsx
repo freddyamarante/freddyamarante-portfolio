@@ -21,7 +21,16 @@ export const Input = ({
   const isInvalid = isFormInvalid(inputError)
 
   return (
-    <div className={`col-span-${span}`}>
+    <motion.div
+      initial={{ opacity: 0, x: -10 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { type: 'spring', stiffness: 100 },
+      }}
+      viewport={{ once: true }}
+      className={`col-span-${span}`}
+    >
       <div className="flex flex-row">
         <label
           htmlFor={name}
@@ -72,7 +81,7 @@ export const Input = ({
           />
         )}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

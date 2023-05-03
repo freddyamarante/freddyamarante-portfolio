@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Journey from '@/components/Journey/Journey'
-import Hero from '@/components/Hero'
+import Hero from '@/components/Hero/Hero'
 import AboutMe from '@/components/AboutMe'
 import Projects from '@/components/Projects/Projects'
 import ContactMe from '@/components/ContactMe/ContactMe'

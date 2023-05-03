@@ -6,6 +6,7 @@ import {
   subject_validation,
   message_validation,
 } from '@/utils/inputValidations'
+import { motion } from 'framer-motion'
 
 import { sendContactForm } from '@/lib/api'
 import { Input } from './Input'
@@ -84,7 +85,14 @@ export default function Form() {
           />
           {/* Submit button */}
           <div className="flex flex-col justify-center sm:justify-end col-start-1 col-span-3 sm:col-start-3 sm:col-span-1">
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { type: 'spring', stiffness: 100 },
+              }}
+              viewport={{ once: true }}
               type="button"
               onClick={onSubmit}
               className="flex items-center font-semibold shadow-sm gap-2 px-6 py-2.5 text-lg justify-center bg-night dark:bg-white text-white dark:text-night hover:bg-marian dark:hover:bg-madder dark:hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-night dark:focus-visible:outline-white"
@@ -104,7 +112,7 @@ export default function Form() {
                 />
               </svg>
               Send message
-            </button>
+            </motion.button>
             {success === 'success' && (
               <p className="flex justify-end gap-1 mt-3 font-semibold text-marian dark:text-white">
                 submitted!

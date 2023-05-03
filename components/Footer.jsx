@@ -1,8 +1,23 @@
+import { motion } from 'framer-motion'
+
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-night dark:bg-transparent border-2 border-night dark:border-white border-b-0 text-white mx-auto w-full max-w-5xl py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2  gap-x-2  gap-y-4 justify-center text-center text-lg font-semibold">
+    <div className="overflow-hidden">
+      <motion.footer
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { type: 'spring', stifness: 100 },
+        }}
+        whileHover={{
+          scale: 1.02,
+          transition: { type: 'spring', stifness: 300 },
+        }}
+        viewport={{ once: true }}
+        className="bg-night dark:bg-transparent border-2 border-night dark:border-white border-b-0 text-white mx-auto w-full max-w-5xl pt-8 pb-12"
+      >
+        <div className="grid grid-cols-1 sm:grid-cols-2  gap-x-2  gap-y-4 justify-center text-center text-lg font-semibold ">
           <div className="flex justify-center  items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +53,7 @@ export default function Footer() {
             +51 921 331 375
           </div>
         </div>
-      </footer>
-    </>
+      </motion.footer>
+    </div>
   )
 }

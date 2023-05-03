@@ -1,4 +1,5 @@
 import { Amarante } from 'next/font/google'
+import { motion } from 'framer-motion'
 
 const amarante = Amarante({
   weight: '400',
@@ -10,8 +11,18 @@ export default function Skill({
   description = 'Description here.',
   rightside = false,
 }) {
+  const xValue = rightside ? 10 : -10
   return (
-    <div className="flex flex-col pl-4 mb-24">
+    <motion.div
+      initial={{ opacity: 0, x: xValue }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { type: 'spring', stifness: 100 },
+      }}
+      viewport={{ once: true }}
+      className="flex flex-col pl-4 mb-24"
+    >
       <div
         className={`flex flex-row items-center ${
           rightside ? 'justify-end' : ''
@@ -40,6 +51,6 @@ export default function Skill({
       >
         {description}
       </p>
-    </div>
+    </motion.div>
   )
 }

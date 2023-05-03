@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 import { Amarante } from 'next/font/google'
 
@@ -24,13 +25,40 @@ export default function Project({
     <div className="pb-20 lg:pb-28 px-0 lg:px-8">
       <div className="flex flex-col xl:flex-row">
         <div className="flex flex-col basis-2/5 justify-center">
-          <h1
+          <motion.h1
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            viewport={{ once: true }}
             className={`${amarante.className} text-4xl sm:text-5xl lg:text-4xl xl:text-5xl`}
           >
             {title}
-          </h1>
-          <p className="text-lg xl:text-xl py-6">{description}</p>
-          <div className="aspect-h-5 aspect-w-5 border-2 border-night dark:border-white">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            viewport={{ once: true }}
+            className="text-lg xl:text-xl py-6"
+          >
+            {description}
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            viewport={{ once: true }}
+            className="aspect-h-5 aspect-w-5 border-2 border-night dark:border-white"
+          >
             <Image
               className="object-center object-cover"
               src={imageSrc}
@@ -38,29 +66,98 @@ export default function Project({
               width={1920}
               height={1080}
             />
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col basis-3/5 mt-12 xl:mt-0 xl:pl-28 justify-center">
           <div className="pb-8">
-            <h3 className="text-2xl xl:text-3xl font-bold pb-4">
+            <motion.h3
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-2xl xl:text-3xl font-bold pb-4"
+            >
               {pointTitle1}
-            </h3>
-            <p className="text-lg xl:text-xl">{pointDescription1}</p>
+            </motion.h3>
+            <motion.p
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-lg xl:text-xl"
+            >
+              {pointDescription1}
+            </motion.p>
           </div>
           <div className="pb-8">
-            <h3 className="text-2xl xl:text-3xl font-bold pb-4">
+            <motion.h3
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-2xl xl:text-3xl font-bold pb-4"
+            >
               {pointTitle2}
-            </h3>
-            <p className="text-lg xl:text-xl">{pointDescription2}</p>
+            </motion.h3>
+            <motion.p
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-lg xl:text-xl"
+            >
+              {pointDescription2}
+            </motion.p>
           </div>
           <div className="pb-8">
-            <h3 className="text-2xl xl:text-3xl font-bold pb-4">
+            <motion.h3
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-2xl xl:text-3xl font-bold pb-4"
+            >
               {pointTitle3}
-            </h3>
-            <p className="text-lg xl:text-xl">{pointDescription3}</p>
+            </motion.h3>
+            <motion.p
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="text-lg xl:text-xl"
+            >
+              {pointDescription3}
+            </motion.p>
           </div>
           {url === '' && repository === '' ? null : (
-            <div className="grid grid-rows-2 grid-cols-none md:grid-rows-none md:grid-cols-4 justify-between items-center gap-y-4 gap-x-8 mx-auto mt-10">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="grid grid-rows-2 grid-cols-none md:grid-rows-none md:grid-cols-4 justify-between items-center gap-y-4 gap-x-8 mx-auto mt-10"
+            >
               <a
                 href={url}
                 target="_blank"
@@ -123,7 +220,7 @@ export default function Project({
                   Check the repository
                 </button>
               </a>
-            </div>
+            </motion.div>
           )}
         </div>
       </div>

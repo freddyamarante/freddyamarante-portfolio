@@ -17,7 +17,14 @@ export default function Journey() {
     <section>
       <div className="border-2 border-night dark:border-white mx-2 lg:mx-8 my-5 ">
         <div className="flex flex-col px-8 lg:px-20 py-20 basis-1/6">
-          <div className="flex lg:hidden justify-between mb-8">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            className="flex lg:hidden justify-between mb-8"
+          >
             <div className="flex flex-row">
               <svg
                 viewBox="0 0 100 100"
@@ -36,9 +43,21 @@ export default function Journey() {
             <div className="uppercase text-sm font-black text-right">
               Last updated: 25/04/23
             </div>
-          </div>
-          <div className="flex flex-row justify-center lg:justify-between items-center mb-8 lg:mb-14">
-            <div className="hidden lg:flex flex-row items-center">
+          </motion.div>
+          <div
+            viewport={{ once: true }}
+            className="flex flex-row justify-center lg:justify-between items-center mb-8 lg:mb-14"
+          >
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="hidden lg:flex flex-row items-center"
+            >
               <svg
                 viewBox="0 0 100 100"
                 className="h-4 w-4 mr-2 text-marian dark:text-madder"
@@ -52,17 +71,42 @@ export default function Journey() {
                 />
               </svg>
               <div className="uppercase text-sm font-black">Journey</div>
-            </div>
-            <h1
+            </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, x: -10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
               className={`${amarante.className} text-3xl xs:text-4xl sm:text-5xl lg:text-6xl text-center mb-2 px-2 underline decoration-4 underline-offset-4 decoration-marian dark:decoration-madder`}
             >
               My journey as a developer
-            </h1>
-            <div className="uppercase text-sm font-black hidden lg:block">
+            </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: { type: 'spring', stifness: 100 },
+              }}
+              viewport={{ once: true }}
+              className="uppercase text-sm font-black hidden lg:block"
+            >
               Last updated: 25/04/23
-            </div>
+            </motion.div>
           </div>
-          <div className="text-left text-lg lg:text-xl mb-20">
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            viewport={{ once: true }}
+            className="text-left text-lg lg:text-xl mb-20"
+          >
             In college, I discovered my passion for web development and design
             while studying Systems Engineering. Learning the basics of HTML,
             CSS, and JS ignited my interest and led me to explore further. I
@@ -74,7 +118,7 @@ export default function Journey() {
             been an exciting and fulfilling one, and I look forward to the
             challenges and opportunities that lie ahead as I continue to grow
             and evolve.
-          </div>
+          </motion.div>
           <div className="basis-full">
             <div className="flex flex-col lg:flex-row justify-center items-center">
               <div className="flex flex-col w-full lg:w-1/4 order-1 lg:order-1">
@@ -119,45 +163,92 @@ export default function Journey() {
               </div>
             </div>
           </div>
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { type: 'spring', stifness: 100 },
+            }}
+            viewport={{ once: true }}
             className={`mx-auto my-20 text-3xl xs:text-4xl sm:text-5xl text-center ${amarante.className}`}
           >
             and other stuff I&apos;ve used along the way
-          </div>
+          </motion.div>
           <div className="py-10 sm:py-12">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 {/* TypeScript */}
                 <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { type: 'spring', stifness: 100 },
+                  }}
+                  viewport={{ once: true }}
                   whileHover={{ y: -50, color: '#007ACC' }}
+                  whileTap={{ scale: 1.2, color: '#007ACC' }}
                   className="lg:col-span-1 col-span-2 p-8"
                 >
                   <TypeScript />
                 </motion.div>
                 {/* TailwindCSS */}
                 <motion.div
-                  whileHover={{ y: -50, color: '#1E293B' }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { type: 'spring', stifness: 100 },
+                  }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -50, color: '#2298BD' }}
+                  whileTap={{ scale: 1.2, color: '#007ACC' }}
                   className="lg:col-span-1 col-span-2 p-8"
                 >
                   <Tailwind />
                 </motion.div>
                 {/* Firebase */}
                 <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { type: 'spring', stifness: 100 },
+                  }}
+                  viewport={{ once: true }}
                   whileHover={{ y: -50, color: '#FFA611' }}
+                  whileTap={{ scale: 1.2, color: '#007ACC' }}
                   className="lg:col-span-1 col-span-2 p-8"
                 >
                   <Firebase />
                 </motion.div>
                 {/* Figma */}
                 <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { type: 'spring', stifness: 100 },
+                  }}
+                  viewport={{ once: true }}
                   whileHover={{ y: -50, color: '#F24E1E' }}
+                  whileTap={{ scale: 1.2, color: '#007ACC' }}
                   className="col-span-2 before:sm:col-start-2 lg:col-span-1 p-8"
                 >
                   <Figma />
                 </motion.div>
                 {/* Strapi */}
                 <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { type: 'spring', stifness: 100 },
+                  }}
+                  viewport={{ once: true }}
                   whileHover={{ y: -50, color: '#2E7DE1' }}
+                  whileTap={{ scale: 1.2, color: '#007ACC' }}
                   className="col-span-4 col-start-1 sm:col-start-auto lg:col-span-1 p-8"
                 >
                   <Strapi />
