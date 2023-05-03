@@ -47,31 +47,39 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap justify-center items-center mt-4 gap-4">
               {/* Github */}
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 href="https://github.com/freddyamarante"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github />
-              </a>
+              </motion.a>
               {/* LinkedIn */}
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 href="https://www.linkedin.com/in/freddy-amarante/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <LinkedIn />
-              </a>
+              </motion.a>
               {/* Twitter */}
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 href="https://twitter.com/thecoolerdev"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter />
-              </a>
+              </motion.a>
               {/* My CV */}
-              <a
+              <motion.a
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
                 href="https://drive.google.com/file/d/1OiGBCJnTgniK4pBsehECLIOlUYF09WGb/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -96,7 +104,7 @@ export default function Hero() {
                   </svg>
                   Read my CV
                 </button>
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>

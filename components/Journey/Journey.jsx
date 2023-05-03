@@ -2,9 +2,10 @@ import { Suspense } from 'react'
 import JourneyExperience from './JourneyExperience'
 import { Amarante } from 'next/font/google'
 import { Canvas } from '@react-three/fiber'
+import { motion } from 'framer-motion'
 
 import Skill from './Skill'
-import { Firebase, Strapi, Tailwind, TypeScript } from '../Icons/Icons'
+import { Figma, Firebase, Strapi, Tailwind, TypeScript } from '../Icons/Icons'
 
 const amarante = Amarante({
   weight: '400',
@@ -127,33 +128,40 @@ export default function Journey() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 {/* TypeScript */}
-                <div className="lg:col-span-1 col-span-2">
+                <motion.div
+                  whileHover={{ y: -50, color: '#007ACC' }}
+                  className="lg:col-span-1 col-span-2 p-8"
+                >
                   <TypeScript />
-                </div>
+                </motion.div>
                 {/* TailwindCSS */}
-                <div className="lg:col-span-1 col-span-2">
+                <motion.div
+                  whileHover={{ y: -50, color: '#1E293B' }}
+                  className="lg:col-span-1 col-span-2 p-8"
+                >
                   <Tailwind />
-                </div>
+                </motion.div>
                 {/* Firebase */}
-                <div className="lg:col-span-1 col-span-2">
+                <motion.div
+                  whileHover={{ y: -50, color: '#FFA611' }}
+                  className="lg:col-span-1 col-span-2 p-8"
+                >
                   <Firebase />
-                </div>
+                </motion.div>
                 {/* Figma */}
-                <div className="col-span-2 before:sm:col-start-2 lg:col-span-1">
-                  <svg
-                    width="165"
-                    height="166"
-                    className="max-h-36 w-full h-full object-contain fill-night dark:fill-white"
-                    viewBox="0 0 165 166"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M58.4375 14.25C52.9674 14.25 47.7214 16.423 43.8534 20.2909C39.9855 24.1589 37.8125 29.4049 37.8125 34.875C37.8125 40.3451 39.9855 45.5911 43.8534 49.4591C47.7214 53.327 52.9674 55.5 58.4375 55.5H106.563C112.033 55.5 117.279 53.327 121.147 49.4591C125.015 45.5911 127.188 40.3451 127.188 34.875C127.188 29.4049 125.015 24.1589 121.147 20.2909C117.279 16.423 112.033 14.25 106.563 14.25H58.4375ZM106.563 62.375C101.092 62.375 95.8464 64.548 91.9784 68.4159C88.1105 72.2839 85.9375 77.5299 85.9375 83C85.9375 88.4701 88.1105 93.7161 91.9784 97.5841C95.8464 101.452 101.092 103.625 106.563 103.625C112.033 103.625 117.279 101.452 121.147 97.5841C125.015 93.7161 127.188 88.4701 127.188 83C127.188 77.5299 125.015 72.2839 121.147 68.4159C117.279 64.548 112.033 62.375 106.563 62.375ZM37.8125 83C37.8125 77.5299 39.9855 72.2839 43.8534 68.4159C47.7214 64.548 52.9674 62.375 58.4375 62.375H79.0625V103.625H58.4375C52.9674 103.625 47.7214 101.452 43.8534 97.5841C39.9855 93.7161 37.8125 88.4701 37.8125 83ZM58.4375 110.5C54.3583 110.5 50.3706 111.71 46.9789 113.976C43.5871 116.242 40.9436 119.463 39.3825 123.232C37.8214 127.001 37.413 131.148 38.2088 135.149C39.0046 139.15 40.969 142.825 43.8534 145.709C46.7379 148.594 50.4129 150.558 54.4138 151.354C58.4146 152.15 62.5616 151.741 66.3304 150.18C70.0991 148.619 73.3203 145.975 75.5866 142.584C77.8529 139.192 79.0625 135.204 79.0625 131.125V110.5H58.4375Z" />
-                  </svg>
-                </div>
+                <motion.div
+                  whileHover={{ y: -50, color: '#F24E1E' }}
+                  className="col-span-2 before:sm:col-start-2 lg:col-span-1 p-8"
+                >
+                  <Figma />
+                </motion.div>
                 {/* Strapi */}
-                <div className="col-span-4 col-start-1 sm:col-start-auto lg:col-span-1">
+                <motion.div
+                  whileHover={{ y: -50, color: '#2E7DE1' }}
+                  className="col-span-4 col-start-1 sm:col-start-auto lg:col-span-1 p-8"
+                >
                   <Strapi />
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
