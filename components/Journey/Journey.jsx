@@ -23,6 +23,7 @@ export default function Journey() {
               opacity: 1,
               transition: { type: 'spring', stifness: 100 },
             }}
+            viewport={{ once: true }}
             className="flex lg:hidden justify-between mb-8"
           >
             <div className="flex flex-row">
