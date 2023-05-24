@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
 
 import Skill from './Skill'
-import { Figma, Firebase, Strapi, Tailwind, TypeScript } from '../Icons/Icons'
+import { Figma, Firebase, Sanity, Tailwind, TypeScript } from '../Icons/Icons'
 
 const amarante = Amarante({
   weight: '400',
@@ -178,7 +178,7 @@ export default function Journey() {
           </motion.div>
           <div className="py-10 sm:py-12">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+              <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none">
                 {/* TypeScript */}
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -238,21 +238,6 @@ export default function Journey() {
                   className="col-span-2 before:sm:col-start-2 lg:col-span-1 p-8"
                 >
                   <Figma />
-                </motion.div>
-                {/* Strapi */}
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { type: 'spring', stifness: 100 },
-                  }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -50, color: '#2E7DE1' }}
-                  whileTap={{ scale: 1.2, color: '#007ACC' }}
-                  className="col-span-4 col-start-1 sm:col-start-auto lg:col-span-1 p-8"
-                >
-                  <Strapi />
                 </motion.div>
               </div>
             </div>
