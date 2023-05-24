@@ -48,7 +48,7 @@ export function TypeScript() {
     <svg
       width="125"
       height="125"
-      className="max-h-36 w-full h-full object-contain fill-night dark:fill-white"
+      className="max-h-36 w-full h-full object-contain"
       viewBox="0 0 125 125"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -65,7 +65,7 @@ export function Tailwind() {
       width="165"
       height="165"
       viewBox="0 0 165 165"
-      className="max-h-42 w-full h-full object-contain fill-night dark:fill-white"
+      className={`max-h-42 w-full h-full object-contain `}
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="currentColor" fillRule="evenodd">
@@ -81,7 +81,7 @@ export function Firebase() {
       width="163"
       height="160"
       viewBox="0 0 163 160"
-      className="max-h-36 w-full h-full object-contain fill-night dark:fill-white"
+      className="max-h-36 w-full h-full object-contain "
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="currentColor" fillRule="evenodd">
@@ -96,7 +96,7 @@ export function Figma() {
     <svg
       width="165"
       height="166"
-      className="max-h-36 w-full h-full object-contain fill-night dark:fill-white"
+      className="max-h-36 w-full h-full object-contain"
       viewBox="0 0 165 166"
       xmlns="http://www.w3.org/2000/svg"
     >
