@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import { ThemeProvider } from 'next-themes'
+import { Analytics } from '@/vercel/analytics/react'
 
 import { Merriweather } from 'next/font/google'
 
@@ -14,6 +15,8 @@ export default function App({ Component, pageProps }) {
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>
+
+      <Analytics />
     </main>
   )
 }
