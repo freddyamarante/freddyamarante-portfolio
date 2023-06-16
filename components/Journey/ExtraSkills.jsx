@@ -20,7 +20,8 @@ export default function ExtraSkills() {
     <>
       <div className="mx-auto grid max-w-lg grid-cols-2 md:grid-cols-4 items-center sm:max-w-xl gap-20 lg:mx-0 lg:max-w-none">
         {/* TypeScript */}
-        <motion.div
+        <motion.a
+          href="https://www.typescriptlang.org/"
           initial={{ opacity: 0, y: 10, color: initialColor }}
           whileInView={{
             opacity: 1,
@@ -32,9 +33,10 @@ export default function ExtraSkills() {
           whileTap={{ scale: 1.2, color: '#007ACC' }}
         >
           <TypeScript />
-        </motion.div>
+        </motion.a>
         {/* TailwindCSS */}
-        <motion.div
+        <motion.a
+          href="https://tailwindcss.com/"
           initial={{ opacity: 0, y: 10, color: initialColor }}
           whileInView={{
             opacity: 1,
@@ -46,9 +48,10 @@ export default function ExtraSkills() {
           whileTap={{ scale: 1.2, color: '#2298BD' }}
         >
           <Tailwind />
-        </motion.div>
+        </motion.a>
         {/* Firebase */}
-        <motion.div
+        <motion.a
+          href="https://firebase.google.com/?hl=es"
           initial={{ opacity: 0, y: 10, color: initialColor }}
           whileInView={{
             opacity: 1,
@@ -60,9 +63,10 @@ export default function ExtraSkills() {
           whileTap={{ scale: 1.2, color: '#FFA611' }}
         >
           <Firebase />
-        </motion.div>
+        </motion.a>
         {/* Figma */}
-        <motion.div
+        <motion.a
+          href="https://www.figma.com/"
           initial={{ opacity: 0, y: 10, color: initialColor }}
           whileInView={{
             opacity: 1,
@@ -74,7 +78,7 @@ export default function ExtraSkills() {
           whileTap={{ scale: 1.2, color: '#F24E1E' }}
         >
           <Figma />
-        </motion.div>
+        </motion.a>
       </div>
     </>
   )
